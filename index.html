@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LegalKant | Legal Knowledge Simplified</title>
+
+    <meta name="description"
+        content="LegalKant is a law student's platform for legal knowledge, case laws, research and practical legal resources.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f8fafc;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            background: #0b1f3a;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #d4af37;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        nav ul li a:hover {
+            color: #d4af37;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 7%;
+            background: linear-gradient(135deg, #0b1f3a, #163d68);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 750px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #d4af37;
+        }
+
+        .hero h2 {
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #dce6f2;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d4af37;
+            color: #0b1f3a;
+            padding: 13px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 75px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 35px;
+            color: #0b1f3a;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #64748b;
+        }
+
+        /* ABOUT */
+        .about {
+            background: white;
+        }
+
+        .about-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+            color: #475569;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .card-icon {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #0b1f3a;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #64748b;
+        }
+
+        /* DISCLAIMER */
+        .disclaimer {
+            background: #fff8e1;
+            border-left: 5px solid #d4af37;
+            padding: 25px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .disclaimer h3 {
+            margin-bottom: 8px;
+            color: #0b1f3a;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #0b1f3a;
+            color: white;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            color: #dce6f2;
+            margin-bottom: 25px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #071426;
+            color: #94a3b8;
+            text-align: center;
+            padding: 25px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                text-align: center;
+                min-height: 75vh;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .hero h2 {
+                font-size: 22px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">
+            Legal<span>Kant</span>
+        </div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>Legal<span>Kant</span></h1>
+
+            <h2>Legal Knowledge. Simplified.</h2>
+
+            <p>
+                A law student's platform dedicated to making legal knowledge,
+                case laws, research and practical legal resources easier
+                to understand and access.
+            </p>
+
+            <a href="#resources" class="btn">
+                Explore Resources
+            </a>
+
+            <a href="#about" class="btn btn-outline">
+                About LegalKant
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="section-title">
+            <h2>About LegalKant</h2>
+            <p>Learning law. Sharing knowledge. Growing together.</p>
+        </div>
+
+        <div class="about-content">
+
+            <p>
+                LegalKant is a law student's initiative created to explore,
+                research and share legal knowledge in a simple and accessible
+                format.
+            </p>
+
+            <br>
+
+            <p>
+                The platform aims to provide useful legal resources,
+                case-law information, legal articles and study material
+                for law students and anyone interested in understanding
+                the law.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESOURCES -->
+    <section id="resources">
+
+        <div class="section-title">
+
+            <h2>Legal Resources</h2>
+
+            <p>
+                Explore different areas of legal learning and research.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card">
+
+                <div class="card-icon">⚖️</div>
+
+                <h3>Case Laws</h3>
+
+                <p>
+                    Explore important judicial decisions and understand
+                    their legal principles and significance.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">📚</div>
+
+                <h3>Legal Research</h3>
+
+                <p>
+                    Resources and guidance for students interested in
+                    legal research and academic learning.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="card-icon">📄</div>
+
+                <h3>Legal Documents</h3>
+
+                <p>
+                    Learn about commonly used legal documents,
+                    agreements and drafting concepts.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ARTICLES -->
+    <section id="articles" class="about">
+
+        <div class="section-title">
+
+            <h2>Legal Articles</h2>
+
+            <p>
+                Simple explanations of legal concepts and developments.
+            </p>
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Constitutional Law</h3>
+
+                <p>
+                    Learn about fundamental rights, constitutional
+                    principles and important concepts.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Corporate Law</h3>
+
+                <p>
+                    Explore basic concepts relating to companies,
+                    businesses and corporate regulations.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Consumer Law</h3>
+
+                <p>
+                    Understand consumer rights and important legal
+                    concepts related to consumer protection.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- DISCLAIMER -->
+    <section>
+
+        <div class="disclaimer">
+
+            <h3>Legal Information Disclaimer</h3>
+
+            <p>
+                The information provided on LegalKant is for educational
+                and informational purposes only. It should not be considered
+                legal advice or a substitute for consultation with a
+                qualified legal professional.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2>Connect with LegalKant</h2>
+
+        <p>
+            Building a platform for learning, researching and
+            understanding law.
+        </p>
+
+        <a href="mailto:contact@legalkant.com" class="btn">
+            Contact
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 LegalKant. All Rights Reserved.
+        </p>
+
+        <p>
+            Created as a law student's legal knowledge platform.
+        </p>
+
+    </footer>
+
+</body>
+</html>
