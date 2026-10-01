@@ -1,533 +1,585 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Bare Acts | LegalKant</title>
+  <title>Bare Acts | LegalKant</title>
 
-    <meta name="description"
-          content="Indian Bare Acts and legislation resources for law students and legal researchers.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fa;
+      color: #1d2633;
+      line-height: 1.6;
+    }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    /* NAVBAR */
+    nav {
+      background: #071a33;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f6f8fb;
-            color: #172033;
-            line-height: 1.6;
-        }
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
 
-        nav {
-            background: #0b1f3a;
-            color: white;
-            padding: 18px 7%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    .logo span {
+      color: #d4af37;
+    }
 
-        .logo {
-            font-size: 26px;
-            font-weight: bold;
-        }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 15px;
+    }
 
-        .logo span {
-            color: #d4af37;
-        }
+    nav a:hover {
+      color: #d4af37;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 22px;
-        }
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #071a33, #102f55);
+      color: white;
+      padding: 70px 8%;
+      text-align: center;
+    }
 
-        nav a:hover {
-            color: #d4af37;
-        }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
 
-        .hero {
-            background: linear-gradient(135deg, #0b1f3a, #173f6d);
-            color: white;
-            padding: 75px 7%;
-            text-align: center;
-        }
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      font-size: 17px;
+      opacity: 0.92;
+    }
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 12px;
-        }
+    /* NOTICE */
+    .notice {
+      max-width: 1100px;
+      margin: 35px auto 10px;
+      padding: 18px 22px;
+      background: #fff8df;
+      border-left: 5px solid #d4af37;
+      border-radius: 8px;
+      font-size: 14px;
+    }
 
-        .hero p {
-            max-width: 750px;
-            margin: auto;
-            color: #dce6f2;
-            font-size: 17px;
-        }
+    .notice strong {
+      color: #071a33;
+    }
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 60px 7%;
-        }
+    /* CONTENT */
+    .container {
+      width: 84%;
+      max-width: 1100px;
+      margin: 35px auto 70px;
+    }
 
-        .notice {
-            background: #fff8e1;
-            border-left: 5px solid #d4af37;
-            padding: 20px;
-            margin-bottom: 40px;
-        }
+    .section-title {
+      font-size: 27px;
+      color: #071a33;
+      margin: 45px 0 18px;
+      border-bottom: 2px solid #d4af37;
+      padding-bottom: 8px;
+    }
 
-        .notice strong {
-            color: #0b1f3a;
-        }
+    .acts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 22px;
+    }
 
-        .category {
-            margin-bottom: 55px;
-        }
+    .act-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      border: 1px solid #e7e9ed;
+      transition: 0.2s;
+    }
 
-        .category h2 {
-            color: #0b1f3a;
-            font-size: 30px;
-            margin-bottom: 25px;
-            border-bottom: 2px solid #d4af37;
-            padding-bottom: 10px;
-        }
+    .act-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    }
 
-        .acts {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
+    .act-card h3 {
+      color: #071a33;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
 
-        .act {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            border: 1px solid #e2e8f0;
-            transition: 0.3s;
-        }
+    .act-info {
+      color: #596575;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
 
-        .act:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-            border-color: #d4af37;
-        }
+    .source {
+      font-size: 13px;
+      color: #657181;
+      margin-bottom: 16px;
+    }
 
-        .act h3 {
-            color: #0b1f3a;
-            margin-bottom: 8px;
-        }
+    .buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
 
-        .act .details {
-            color: #64748b;
-            font-size: 14px;
-            margin-bottom: 15px;
-        }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
 
-        .act p {
-            color: #475569;
-            font-size: 15px;
-            margin-bottom: 15px;
-        }
+    .btn-primary {
+      background: #071a33;
+      color: white;
+    }
 
-        .official {
-            display: inline-block;
-            background: #0b1f3a;
-            color: white;
-            padding: 9px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: bold;
-        }
+    .btn-primary:hover {
+      background: #102f55;
+    }
 
-        .official:hover {
-            background: #d4af37;
-            color: #0b1f3a;
-        }
+    .btn-secondary {
+      background: #d4af37;
+      color: #071a33;
+    }
 
-        .back {
-            display: inline-block;
-            margin-top: 15px;
-            color: #0b1f3a;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .btn-secondary:hover {
+      background: #c29c28;
+    }
 
-        footer {
-            background: #071426;
-            color: #94a3b8;
-            text-align: center;
-            padding: 30px;
-        }
+    /* FOOTER */
+    footer {
+      background: #071a33;
+      color: #d9e0e8;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 14px;
+    }
 
-        footer a {
-            color: #d4af37;
-            text-decoration: none;
-        }
+    footer a {
+      color: #d4af37;
+      text-decoration: none;
+    }
 
-        @media (max-width: 750px) {
+    footer p {
+      margin: 7px 0;
+    }
 
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
+    /* MOBILE */
+    @media (max-width: 700px) {
+      nav {
+        justify-content: center;
+        gap: 12px;
+      }
 
-            nav a {
-                margin: 0 8px;
-            }
+      nav a {
+        margin: 5px 8px;
+      }
 
-            .hero h1 {
-                font-size: 38px;
-            }
+      .hero h1 {
+        font-size: 32px;
+      }
 
-            .acts {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+      .container {
+        width: 92%;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<nav>
-
-    <div class="logo">
-        Legal<span>Kant</span>
-    </div>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">Legal<span>Kant</span></div>
 
     <div>
-        <a href="index.html">Home</a>
-        <a href="index.html#resources">Resources</a>
-        <a href="case-laws.html">Case Laws</a>
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#resources">Resources</a>
+      <a href="articles.html">Articles</a>
+      <a href="index.html#contact">Contact</a>
     </div>
+  </nav>
 
-</nav>
 
-
-<section class="hero">
-
+  <!-- HERO -->
+  <section class="hero">
     <h1>🏛️ Indian Bare Acts</h1>
-
     <p>
-        A curated educational collection of important Indian legislation
-        for law students and legal researchers, with links to official
-        government sources.
+      Access important Indian Central Acts through official Government
+      sources for legal study, research and educational purposes.
     </p>
-
-</section>
-
-
-<main class="container">
+  </section>
 
 
-    <div class="notice">
+  <!-- NOTICE -->
+  <div class="notice">
+    <strong>Important:</strong>
+    LegalKant does not host or modify the text of the Acts.
+    The links below direct users to official Government of India
+    legal resources. Laws may be amended from time to time, so
+    users should verify the current law before relying on it.
+  </div>
 
-        <strong>Important:</strong>
 
-        LegalKant provides these resources for educational and research
-        purposes. Always check the current official text, amendments,
-        notifications and commencement provisions before relying on any
-        legislation for a legal matter.
-
-    </div>
-
+  <main class="container">
 
     <!-- CONSTITUTION -->
+    <h2 class="section-title">🇮🇳 Constitution of India</h2>
 
-    <section class="category">
+    <div class="acts-grid">
 
-        <h2>🇮🇳 Constitution</h2>
+      <div class="act-card">
+        <h3>Constitution of India</h3>
 
-        <div class="acts">
+        <p class="act-info">
+          The Constitution of India is the supreme law of India and
+          establishes the framework of government, fundamental rights,
+          directive principles and constitutional institutions.
+        </p>
 
-            <div class="act">
+        <p class="source">
+          <strong>Official Source:</strong> India Code
+        </p>
 
-                <h3>Constitution of India</h3>
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://www.indiacode.nic.in/bitstream/123456789/19632/1/the_constitution_of_india.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
+            📄 Official PDF
+          </a>
 
-                <div class="details">
-                    Enacted: 26 November 1949
-                    <br>
-                    Commenced: 26 January 1950
-                </div>
-
-                <p>
-                    The supreme constitutional framework of India,
-                    containing provisions relating to fundamental rights,
-                    directive principles, the Union and States, judiciary,
-                    elections, emergency provisions and constitutional
-                    amendment.
-                </p>
-
-                <a class="official"
-                   href="https://www.indiacode.nic.in/indiacode/handle/123456789/10230"
-                   target="_blank">
-                    Official India Code →
-                </a>
-
-            </div>
-
+          <a
+            class="btn btn-secondary"
+            href="https://www.indiacode.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            🔎 India Code
+          </a>
         </div>
+      </div>
 
-    </section>
+    </div>
 
 
     <!-- CRIMINAL LAW -->
+    <h2 class="section-title">⚖️ Criminal Law</h2>
 
-    <section class="category">
+    <div class="acts-grid">
 
-        <h2>⚖️ Criminal Law</h2>
+      <!-- BNS -->
+      <div class="act-card">
+        <h3>Bharatiya Nyaya Sanhita, 2023</h3>
 
-        <div class="acts">
+        <p class="act-info">
+          Act No. 45 of 2023. It contains provisions relating to
+          offences and criminal liability and replaced the Indian
+          Penal Code framework from its commencement.
+        </p>
 
+        <p class="source">
+          <strong>Act No.:</strong> 45 of 2023<br>
+          <strong>Official Source:</strong> India Code
+        </p>
 
-            <div class="act">
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
+            📄 Official PDF
+          </a>
 
-                <h3>Bharatiya Nyaya Sanhita, 2023</h3>
-
-                <div class="details">
-                    Act No. 45 of 2023
-                    <br>
-                    Enforced: 1 July 2024
-                </div>
-
-                <p>
-                    Provides the principal statutory framework concerning
-                    offences and matters connected with or incidental to
-                    offences.
-                </p>
-
-                <a class="official"
-                   href="https://www.indiacode.nic.in/indiacode/handle/123456789/20062"
-                   target="_blank">
-                    Official India Code →
-                </a>
-
-            </div>
-
-
-            <div class="act">
-
-                <h3>Bharatiya Nagarik Suraksha Sanhita, 2023</h3>
-
-                <div class="details">
-                    Act No. 46 of 2023
-                    <br>
-                    Enforced: 1 July 2024
-                </div>
-
-                <p>
-                    Provides the statutory framework relating to criminal
-                    procedure.
-                </p>
-
-                <a class="official"
-                   href="https://www.indiacode.nic.in/indiacode/handle/123456789/20099"
-                   target="_blank">
-                    Official India Code →
-                </a>
-
-            </div>
-
-
-            <div class="act">
-
-                <h3>Bharatiya Sakshya Adhiniyam, 2023</h3>
-
-                <div class="details">
-                    Act No. 47 of 2023
-                    <br>
-                    Enforced: 1 July 2024
-                </div>
-
-                <p>
-                    Provides general rules and principles of evidence
-                    for fair trial.
-                </p>
-
-                <a class="official"
-                   href="https://www.indiacode.nic.in/indiacode/handle/123456789/20063"
-                   target="_blank">
-                    Official India Code →
-                </a>
-
-            </div>
-
+          <a
+            class="btn btn-secondary"
+            href="https://www.indiacode.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            🔎 India Code
+          </a>
         </div>
-
-    </section>
-
-
-    <!-- CONTRACT -->
-
-    <section class="category">
-
-        <h2>📄 Contract & Commercial Law</h2>
-
-        <div class="acts">
-
-            <div class="act">
-
-                <h3>Indian Contract Act, 1872</h3>
-
-                <div class="details">
-                    Act No. 9 of 1872
-                    <br>
-                    Enforced: 1 September 1872
-                </div>
-
-                <p>
-                    Defines and amends important parts of the law relating
-                    to contracts, including proposals, acceptance, consent,
-                    competency and contractual obligations.
-                </p>
-
-                <a class="official"
-                   href="https://www.indiacode.nic.in/handle/123456789/12845"
-                   target="_blank">
-                    Official India Code →
-                </a>
-
-            </div>
+      </div>
 
 
-            <div class="act">
+      <!-- BNSS -->
+      <div class="act-card">
+        <h3>Bharatiya Nagarik Suraksha Sanhita, 2023</h3>
 
-                <h3>Companies Act, 2013</h3>
+        <p class="act-info">
+          Act No. 46 of 2023. It provides the principal statutory
+          framework relating to criminal procedure.
+        </p>
 
-                <div class="details">
-                    Act No. 18 of 2013
-                    <br>
-                    Enforced from 1 April 2014
-                </div>
+        <p class="source">
+          <strong>Act No.:</strong> 46 of 2023<br>
+          <strong>Official Source:</strong> India Code
+        </p>
 
-                <p>
-                    Provides the statutory framework relating to companies
-                    and corporate regulation in India.
-                </p>
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://www.indiacode.nic.in/bitstream/123456789/20099/1/eng.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
+            📄 Official PDF
+          </a>
 
-                <a class="official"
-                   href="https://www.indiacode.nic.in/indiacode/handle/123456789/2114"
-                   target="_blank">
-                    Official India Code →
-                </a>
-
-            </div>
-
+          <a
+            class="btn btn-secondary"
+            href="https://www.indiacode.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            🔎 India Code
+          </a>
         </div>
+      </div>
 
-    </section>
+
+      <!-- BSA -->
+      <div class="act-card">
+        <h3>Bharatiya Sakshya Adhiniyam, 2023</h3>
+
+        <p class="act-info">
+          Act No. 47 of 2023. It contains statutory provisions
+          relating to evidence in legal proceedings.
+        </p>
+
+        <p class="source">
+          <strong>Act No.:</strong> 47 of 2023<br>
+          <strong>Official Source:</strong> India Code
+        </p>
+
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://www.indiacode.nic.in/bitstream/123456789/20063/1/a202347.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
+            📄 Official PDF
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="https://www.indiacode.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            🔎 India Code
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- CONTRACT & COMMERCIAL -->
+    <h2 class="section-title">📑 Contract & Commercial Law</h2>
+
+    <div class="acts-grid">
+
+      <!-- CONTRACT ACT -->
+      <div class="act-card">
+        <h3>Indian Contract Act, 1872</h3>
+
+        <p class="act-info">
+          Act No. 9 of 1872. The Act deals with important aspects
+          of contracts, agreements, consideration, performance,
+          breach and related contractual principles.
+        </p>
+
+        <p class="source">
+          <strong>Act No.:</strong> 9 of 1872<br>
+          <strong>Official Source:</strong> India Code
+        </p>
+
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://www.indiacode.nic.in/bitstream/123456789/2187/2/A187209.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
+            📄 Official PDF
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="https://www.indiacode.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            🔎 India Code
+          </a>
+        </div>
+      </div>
+
+
+      <!-- COMPANIES ACT -->
+      <div class="act-card">
+        <h3>Companies Act, 2013</h3>
+
+        <p class="act-info">
+          Act No. 18 of 2013. It provides the principal statutory
+          framework concerning companies and corporate regulation
+          in India.
+        </p>
+
+        <p class="source">
+          <strong>Act No.:</strong> 18 of 2013<br>
+          <strong>Official Source:</strong> India Code
+        </p>
+
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://www.indiacode.nic.in/indiacode/handle/123456789/2114"
+            target="_blank"
+            rel="noopener noreferrer">
+            📖 Official Act
+          </a>
+
+          <a
+            class="btn btn-secondary"
+            href="https://www.indiacode.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            🔎 India Code
+          </a>
+        </div>
+      </div>
+
+    </div>
 
 
     <!-- PROPERTY -->
+    <h2 class="section-title">🏠 Property Law</h2>
 
-    <section class="category">
+    <div class="acts-grid">
 
-        <h2>🏠 Property Law</h2>
+      <div class="act-card">
+        <h3>Transfer of Property Act, 1882</h3>
 
-        <div class="acts">
+        <p class="act-info">
+          Act No. 4 of 1882. The Act contains important provisions
+          concerning transfers of property and related legal concepts.
+        </p>
 
-            <div class="act">
+        <p class="source">
+          <strong>Act No.:</strong> 4 of 1882<br>
+          <strong>Official Source:</strong> India Code
+        </p>
 
-                <h3>Transfer of Property Act, 1882</h3>
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://www.indiacode.nic.in/bitstream/123456789/14648/1/tpa.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
+            📄 Official PDF
+          </a>
 
-                <div class="details">
-                    Act No. 4 of 1882
-                    <br>
-                    Commenced: 1 July 1882
-                </div>
-
-                <p>
-                    Deals with important aspects of transfer of property
-                    by act of parties.
-                </p>
-
-                <a class="official"
-                   href="https://www.indiacode.nic.in/bitstream/123456789/14648/1/tpa.pdf"
-                   target="_blank">
-                    Official Act PDF →
-                </a>
-
-            </div>
-
+          <a
+            class="btn btn-secondary"
+            href="https://www.indiacode.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            🔎 India Code
+          </a>
         </div>
+      </div>
 
-    </section>
+    </div>
 
 
     <!-- CONSUMER -->
+    <h2 class="section-title">🛒 Consumer Law</h2>
 
-    <section class="category">
+    <div class="acts-grid">
 
-        <h2>🛒 Consumer Law</h2>
+      <div class="act-card">
+        <h3>Consumer Protection Act, 2019</h3>
 
-        <div class="acts">
+        <p class="act-info">
+          Act No. 35 of 2019. The Act provides for protection of
+          consumer interests and mechanisms for administration and
+          settlement of consumer disputes.
+        </p>
 
-            <div class="act">
+        <p class="source">
+          <strong>Act No.:</strong> 35 of 2019<br>
+          <strong>Official Source:</strong> India Code
+        </p>
 
-                <h3>Consumer Protection Act, 2019</h3>
+        <div class="buttons">
+          <a
+            class="btn btn-primary"
+            href="https://www.indiacode.nic.in/bitstream/123456789/18964/1/cpa.pdf"
+            target="_blank"
+            rel="noopener noreferrer">
+            📄 Official PDF
+          </a>
 
-                <div class="details">
-                    Act No. 35 of 2019
-                    <br>
-                    Enacted: 9 August 2019
-                </div>
-
-                <p>
-                    Provides for protection of consumer interests and
-                    establishes mechanisms for administration and
-                    settlement of consumer disputes.
-                </p>
-
-                <a class="official"
-                   href="https://www.indiacode.nic.in/indiacode/handle/123456789/16103"
-                   target="_blank">
-                    Official India Code →
-                </a>
-
-            </div>
-
+          <a
+            class="btn btn-secondary"
+            href="https://www.indiacode.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+            🔎 India Code
+          </a>
         </div>
+      </div>
 
-    </section>
+    </div>
 
-
-    <a class="back" href="index.html">
-        ← Back to LegalKant
-    </a>
-
-</main>
+  </main>
 
 
-<footer>
-
+  <!-- FOOTER -->
+  <footer>
     <p>
-        © 2026 LegalKant. All Rights Reserved.
+      © 2026 LegalKant. All Rights Reserved.
     </p>
 
     <p>
-        Contact:
-        <a href="mailto:ramakant.legal@gmail.com">
-            ramakant.legal@gmail.com
-        </a>
+      Contact:
+      <a href="mailto:ramakant.legal@gmail.com">
+        ramakant.legal@gmail.com
+      </a>
     </p>
 
     <p>
-        LegalKant is an educational and legal-information platform.
-        Its content does not constitute legal advice.
+      LegalKant is an educational and legal-information platform.
+      Content is provided for educational and informational purposes
+      and does not constitute legal advice.
     </p>
-
-</footer>
+  </footer>
 
 </body>
 </html>
