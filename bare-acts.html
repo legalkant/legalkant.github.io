@@ -4,7 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Bare Acts | LegalKant</title>
+<title>Indian Bare Acts | LegalKant</title>
+
+<meta name="description"
+content="LegalKant Indian Bare Acts research library with official India Code sources, sections and related case-law research.">
 
 <style>
 * {
@@ -23,7 +26,7 @@ body {
 nav {
     background: #071a33;
     color: white;
-    padding: 18px 8%;
+    padding: 18px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,10 +54,10 @@ nav a:hover {
 }
 
 .hero {
-    background: linear-gradient(135deg, #071a33, #102f55);
+    background: linear-gradient(135deg, #071a33, #12365f);
     color: white;
     text-align: center;
-    padding: 70px 8%;
+    padding: 70px 7%;
 }
 
 .hero h1 {
@@ -63,32 +66,64 @@ nav a:hover {
 }
 
 .hero p {
-    max-width: 750px;
+    max-width: 800px;
     margin: auto;
     font-size: 17px;
-}
-
-.notice {
-    width: 84%;
-    max-width: 1100px;
-    margin: 30px auto;
-    padding: 18px 22px;
-    background: #fff8df;
-    border-left: 5px solid #d4af37;
-    border-radius: 8px;
+    opacity: .93;
 }
 
 .container {
-    width: 84%;
-    max-width: 1100px;
-    margin: auto;
-    padding-bottom: 70px;
+    width: 86%;
+    max-width: 1200px;
+    margin: 35px auto 70px;
+}
+
+.notice {
+    background: #fff8df;
+    border-left: 5px solid #d4af37;
+    padding: 18px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.search-box {
+    background: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.07);
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccd3dc;
+    border-radius: 7px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #071a33;
+}
+
+.search-help {
+    color: #687483;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.status {
+    margin: 15px 0;
+    color: #596575;
+    font-size: 14px;
 }
 
 .section-title {
     color: #071a33;
     font-size: 27px;
-    margin: 45px 0 18px;
+    margin: 42px 0 18px;
     padding-bottom: 8px;
     border-bottom: 2px solid #d4af37;
 }
@@ -101,10 +136,10 @@ nav a:hover {
 
 .act-card {
     background: white;
-    padding: 25px;
+    padding: 24px;
     border-radius: 12px;
-    border: 1px solid #e5e8ec;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    border: 1px solid #e3e7ec;
+    box-shadow: 0 4px 15px rgba(0,0,0,.06);
 }
 
 .act-card h3 {
@@ -113,56 +148,127 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.act-info {
-    color: #596575;
+.act-card p {
     font-size: 14px;
-    margin-bottom: 15px;
+    color: #5c6775;
+    margin-bottom: 10px;
 }
 
 .act-number {
-    font-size: 13px;
-    color: #555;
-    margin-bottom: 18px;
+    font-size: 13px !important;
+    color: #333 !important;
 }
 
 .buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 9px;
+    margin-top: 17px;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 10px 13px;
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
-.btn-primary {
+.btn-official {
     background: #071a33;
     color: white;
 }
 
-.btn-primary:hover {
-    background: #102f55;
+.btn-official:hover {
+    background: #12365f;
 }
 
-.btn-secondary {
+.btn-research {
     background: #d4af37;
     color: #071a33;
 }
 
-.btn-secondary:hover {
+.btn-research:hover {
     background: #c39d28;
+}
+
+.research-box {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 35px;
+    box-shadow: 0 4px 16px rgba(0,0,0,.07);
+}
+
+.research-box h2 {
+    color: #071a33;
+    margin-bottom: 10px;
+}
+
+.research-box p {
+    color: #596575;
+    font-size: 14px;
+}
+
+.research-search {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.research-search input {
+    flex: 1;
+    padding: 13px;
+    border: 1px solid #ccd3dc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.research-search button {
+    padding: 13px 18px;
+    background: #071a33;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+.result {
+    background: #f7f9fb;
+    border: 1px solid #e1e5ea;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.result strong {
+    color: #071a33;
+}
+
+.result a {
+    color: #0b4d91;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.no-results {
+    display: none;
+    padding: 20px;
+    text-align: center;
+    color: #687483;
 }
 
 footer {
     background: #071a33;
-    color: #d9e0e8;
+    color: #dce3eb;
     text-align: center;
-    padding: 30px 20px;
+    padding: 32px 20px;
     font-size: 14px;
 }
 
@@ -190,15 +296,22 @@ footer a {
         font-size: 32px;
     }
 
-    .container,
-    .notice {
+    .container {
         width: 92%;
+    }
+
+    .research-search {
+        flex-direction: column;
     }
 }
 </style>
 </head>
 
+
 <body>
+
+
+<!-- NAVIGATION -->
 
 <nav>
 
@@ -217,72 +330,112 @@ footer a {
 </nav>
 
 
+<!-- HERO -->
+
 <section class="hero">
 
     <h1>🏛️ Indian Bare Acts</h1>
 
     <p>
-        Access important Indian legislation through the
-        official India Code repository of the Government of India.
+        Explore important Indian legislation with links to the
+        official India Code repository and a separate legal research
+        layer for sections and related judgments.
     </p>
 
 </section>
 
 
+<main class="container">
+
+
+<!-- NOTICE -->
+
 <div class="notice">
 
-    <strong>Official Source:</strong>
-    LegalKant provides links to the official India Code repository.
-    LegalKant does not modify or reproduce the official statutory text.
-    Always verify the current and amended version of legislation
-    before relying on it.
+<strong>Source & Accuracy Notice:</strong>
+
+LegalKant does not alter statutory text. The official source
+for legislation is the Government of India's India Code portal.
+The research links are provided separately for educational and
+research purposes. Always verify the current law, amendments,
+notifications and commencement status before relying on any provision.
 
 </div>
 
 
-<main class="container">
+<!-- SEARCH -->
+
+<div class="search-box">
+
+    <input
+        type="text"
+        id="actSearch"
+        placeholder="Search an Act... e.g. BNS, Contract Act, Companies Act"
+        onkeyup="filterActs()">
+
+    <div class="search-help">
+        Search by Act name, subject, year or common abbreviation.
+    </div>
+
+</div>
 
 
+<div id="status" class="status"></div>
+
+
+<!-- ========================= -->
 <!-- CONSTITUTION -->
+<!-- ========================= -->
 
 <h2 class="section-title">
-🇮🇳 Constitution of India
+🇮🇳 Constitution
 </h2>
 
 <div class="acts-grid">
 
-<div class="act-card">
 
-<h3>Constitution of India</h3>
+<div class="act-card searchable"
+     data-search="constitution constitution of india 1950 constitutional law">
 
-<p class="act-info">
-The Constitution of India is the supreme legal framework of
-the Republic of India and contains provisions relating to
-fundamental rights, directive principles, constitutional
-institutions and governance.
-</p>
+    <h3>Constitution of India</h3>
 
-<p class="act-number">
-<strong>Official repository:</strong> India Code
-</p>
+    <p>
+        The Constitution of India establishes the constitutional
+        framework of the Republic of India and contains provisions
+        concerning fundamental rights, governance and constitutional
+        institutions.
+    </p>
 
-<div class="buttons">
+    <p class="act-number">
+        <strong>Year:</strong> 1950
+    </p>
 
-<a class="btn btn-primary"
-href="https://www.indiacode.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-🔎 Open India Code
-</a>
+    <div class="buttons">
+
+        <a class="btn btn-official"
+           href="https://indiacode.gov.in/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🏛️ Official India Code
+        </a>
+
+        <a class="btn btn-research"
+           href="https://indiacode.ecourtsindia.com/constitution-of-india/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🔎 Sections & Articles
+        </a>
+
+    </div>
 
 </div>
 
 </div>
 
-</div>
 
-
+<!-- ========================= -->
 <!-- CRIMINAL LAW -->
+<!-- ========================= -->
 
 <h2 class="section-title">
 ⚖️ Criminal Law
@@ -291,90 +444,116 @@ rel="noopener noreferrer">
 <div class="acts-grid">
 
 
-<div class="act-card">
+<div class="act-card searchable"
+     data-search="bns bharatiya nyaya sanhita 2023 criminal law offences">
 
-<h3>Bharatiya Nyaya Sanhita, 2023</h3>
+    <h3>Bharatiya Nyaya Sanhita, 2023</h3>
 
-<p class="act-info">
-The Bharatiya Nyaya Sanhita, 2023 contains statutory provisions
-relating to offences and criminal liability.
-</p>
+    <p>
+        Statutory provisions relating to offences and criminal
+        liability under the current criminal-law framework.
+    </p>
 
-<p class="act-number">
-<strong>Act No.:</strong> 45 of 2023
-</p>
+    <p class="act-number">
+        <strong>Act No.:</strong> 45 of 2023
+    </p>
 
-<div class="buttons">
+    <div class="buttons">
 
-<a class="btn btn-primary"
-href="https://www.indiacode.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-🔎 Open India Code
-</a>
+        <a class="btn btn-official"
+           href="https://indiacode.gov.in/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🏛️ Official India Code
+        </a>
+
+        <a class="btn btn-research"
+           href="https://indiacode.ecourtsindia.com/bns/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🔎 Sections & Cases
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="act-card searchable"
+     data-search="bnss bharatiya nagarik suraksha sanhita 2023 criminal procedure">
+
+    <h3>Bharatiya Nagarik Suraksha Sanhita, 2023</h3>
+
+    <p>
+        Statutory framework relating to criminal procedure and
+        associated procedural matters.
+    </p>
+
+    <p class="act-number">
+        <strong>Act No.:</strong> 46 of 2023
+    </p>
+
+    <div class="buttons">
+
+        <a class="btn btn-official"
+           href="https://indiacode.gov.in/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🏛️ Official India Code
+        </a>
+
+        <a class="btn btn-research"
+           href="https://indiacode.ecourtsindia.com/bnss/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🔎 Sections & Cases
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="act-card searchable"
+     data-search="bsa bharatiya sakshya adhiniyam 2023 evidence law">
+
+    <h3>Bharatiya Sakshya Adhiniyam, 2023</h3>
+
+    <p>
+        Statutory provisions concerning evidence in legal
+        proceedings.
+    </p>
+
+    <p class="act-number">
+        <strong>Act No.:</strong> 47 of 2023
+    </p>
+
+    <div class="buttons">
+
+        <a class="btn btn-official"
+           href="https://indiacode.gov.in/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🏛️ Official India Code
+        </a>
+
+        <a class="btn btn-research"
+           href="https://indiacode.ecourtsindia.com/bsa/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🔎 Sections & Cases
+        </a>
+
+    </div>
 
 </div>
 
 </div>
 
 
-<div class="act-card">
-
-<h3>Bharatiya Nagarik Suraksha Sanhita, 2023</h3>
-
-<p class="act-info">
-The Bharatiya Nagarik Suraksha Sanhita, 2023 provides the
-principal statutory framework concerning criminal procedure.
-</p>
-
-<p class="act-number">
-<strong>Act No.:</strong> 46 of 2023
-</p>
-
-<div class="buttons">
-
-<a class="btn btn-primary"
-href="https://www.indiacode.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-🔎 Open India Code
-</a>
-
-</div>
-
-</div>
-
-
-<div class="act-card">
-
-<h3>Bharatiya Sakshya Adhiniyam, 2023</h3>
-
-<p class="act-info">
-The Bharatiya Sakshya Adhiniyam, 2023 contains statutory
-provisions relating to evidence in legal proceedings.
-</p>
-
-<p class="act-number">
-<strong>Act No.:</strong> 47 of 2023
-</p>
-
-<div class="buttons">
-
-<a class="btn btn-primary"
-href="https://www.indiacode.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-🔎 Open India Code
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-
+<!-- ========================= -->
 <!-- CONTRACT -->
+<!-- ========================= -->
 
 <h2 class="section-title">
 📑 Contract & Commercial Law
@@ -383,64 +562,81 @@ rel="noopener noreferrer">
 <div class="acts-grid">
 
 
-<div class="act-card">
+<div class="act-card searchable"
+     data-search="contract indian contract act 1872 agreement consideration">
 
-<h3>Indian Contract Act, 1872</h3>
+    <h3>Indian Contract Act, 1872</h3>
 
-<p class="act-info">
-The Indian Contract Act, 1872 contains provisions concerning
-contracts and agreements, including important rules relating
-to contractual obligations and breach.
-</p>
+    <p>
+        Important statutory framework relating to contracts,
+        agreements and contractual obligations.
+    </p>
 
-<p class="act-number">
-<strong>Act No.:</strong> 9 of 1872
-</p>
+    <p class="act-number">
+        <strong>Act No.:</strong> 9 of 1872
+    </p>
 
-<div class="buttons">
+    <div class="buttons">
 
-<a class="btn btn-primary"
-href="https://www.indiacode.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-🔎 Open India Code
-</a>
+        <a class="btn btn-official"
+           href="https://indiacode.gov.in/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🏛️ Official India Code
+        </a>
+
+        <a class="btn btn-research"
+           href="https://indiacode.ecourtsindia.com/contract-act/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🔎 Sections & Cases
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="act-card searchable"
+     data-search="companies companies act 2013 corporate company law">
+
+    <h3>Companies Act, 2013</h3>
+
+    <p>
+        Principal statutory framework concerning companies and
+        corporate regulation in India.
+    </p>
+
+    <p class="act-number">
+        <strong>Act No.:</strong> 18 of 2013
+    </p>
+
+    <div class="buttons">
+
+        <a class="btn btn-official"
+           href="https://indiacode.gov.in/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🏛️ Official India Code
+        </a>
+
+        <a class="btn btn-research"
+           href="https://indiacode.ecourtsindia.com/companies-act/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🔎 Sections & Cases
+        </a>
+
+    </div>
 
 </div>
 
 </div>
 
 
-<div class="act-card">
-
-<h3>Companies Act, 2013</h3>
-
-<p class="act-info">
-The Companies Act, 2013 provides the principal statutory
-framework governing companies and corporate matters in India.
-</p>
-
-<p class="act-number">
-<strong>Act No.:</strong> 18 of 2013
-</p>
-
-<div class="buttons">
-
-<a class="btn btn-primary"
-href="https://www.indiacode.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-🔎 Open India Code
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-
+<!-- ========================= -->
 <!-- PROPERTY -->
+<!-- ========================= -->
 
 <h2 class="section-title">
 🏠 Property Law
@@ -448,36 +644,48 @@ rel="noopener noreferrer">
 
 <div class="acts-grid">
 
-<div class="act-card">
 
-<h3>Transfer of Property Act, 1882</h3>
+<div class="act-card searchable"
+     data-search="property transfer property act 1882 tpa sale mortgage lease">
 
-<p class="act-info">
-The Transfer of Property Act, 1882 contains important
-statutory provisions concerning transfers of property.
-</p>
+    <h3>Transfer of Property Act, 1882</h3>
 
-<p class="act-number">
-<strong>Act No.:</strong> 4 of 1882
-</p>
+    <p>
+        Important statutory provisions concerning transfers of
+        property, including concepts relating to sale, mortgage,
+        lease and other transfers.
+    </p>
 
-<div class="buttons">
+    <p class="act-number">
+        <strong>Act No.:</strong> 4 of 1882
+    </p>
 
-<a class="btn btn-primary"
-href="https://www.indiacode.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-🔎 Open India Code
-</a>
+    <div class="buttons">
+
+        <a class="btn btn-official"
+           href="https://indiacode.gov.in/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🏛️ Official India Code
+        </a>
+
+        <a class="btn btn-research"
+           href="https://indiacode.ecourtsindia.com/tp-act/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🔎 Sections & Cases
+        </a>
+
+    </div>
 
 </div>
 
 </div>
 
-</div>
 
-
+<!-- ========================= -->
 <!-- CONSUMER -->
+<!-- ========================= -->
 
 <h2 class="section-title">
 🛒 Consumer Law
@@ -485,38 +693,88 @@ rel="noopener noreferrer">
 
 <div class="acts-grid">
 
-<div class="act-card">
 
-<h3>Consumer Protection Act, 2019</h3>
+<div class="act-card searchable"
+     data-search="consumer consumer protection act 2019 consumer rights">
 
-<p class="act-info">
-The Consumer Protection Act, 2019 provides the statutory
-framework for protection of consumer interests and consumer
-dispute redressal mechanisms.
-</p>
+    <h3>Consumer Protection Act, 2019</h3>
 
-<p class="act-number">
-<strong>Act No.:</strong> 35 of 2019
-</p>
+    <p>
+        Statutory framework concerning consumer protection and
+        consumer dispute redressal mechanisms.
+    </p>
 
-<div class="buttons">
+    <p class="act-number">
+        <strong>Act No.:</strong> 35 of 2019
+    </p>
 
-<a class="btn btn-primary"
-href="https://www.indiacode.gov.in/"
-target="_blank"
-rel="noopener noreferrer">
-🔎 Open India Code
-</a>
+    <div class="buttons">
+
+        <a class="btn btn-official"
+           href="https://indiacode.gov.in/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🏛️ Official India Code
+        </a>
+
+        <a class="btn btn-research"
+           href="https://indiacode.ecourtsindia.com/consumer-protection-act/"
+           target="_blank"
+           rel="noopener noreferrer">
+           🔎 Sections & Cases
+        </a>
+
+    </div>
 
 </div>
 
 </div>
+
+
+<div id="noResults" class="no-results">
+    No Act found. Try another name, abbreviation or subject.
+</div>
+
+
+<!-- ========================= -->
+<!-- LEGAL RESEARCH -->
+<!-- ========================= -->
+
+<div class="research-box">
+
+<h2>🔎 Legal Research</h2>
+
+<p>
+Search the separate India Code research corpus for an Act,
+section, legal phrase or reported judgment. This is a research
+resource and should be cross-checked against the official
+Government source where necessary.
+</p>
+
+<div class="research-search">
+
+<input
+    type="text"
+    id="researchQuery"
+    placeholder="Example: BNS 103, Article 21, cheque bounce">
+
+<button onclick="searchResearch()">
+    Search
+</button>
+
+</div>
+
+<div id="researchResults" class="results"></div>
 
 </div>
 
 
 </main>
 
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
 
 <footer>
 
@@ -538,6 +796,177 @@ and does not constitute legal advice.
 </p>
 
 </footer>
+
+
+<script>
+
+/* =========================
+   ACT SEARCH
+========================= */
+
+function filterActs() {
+
+    const input =
+        document.getElementById("actSearch");
+
+    const query =
+        input.value.toLowerCase().trim();
+
+    const cards =
+        document.querySelectorAll(".searchable");
+
+    let visible = 0;
+
+    cards.forEach(card => {
+
+        const text =
+            card.getAttribute("data-search").toLowerCase();
+
+        if (text.includes(query)) {
+
+            card.style.display = "";
+
+            visible++;
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+    const noResults =
+        document.getElementById("noResults");
+
+    noResults.style.display =
+        visible === 0 ? "block" : "none";
+
+    document.getElementById("status").innerText =
+        query
+        ? visible + " matching Act(s) found"
+        : "";
+}
+
+
+/* =========================
+   RESEARCH SEARCH
+========================= */
+
+async function searchResearch() {
+
+    const input =
+        document.getElementById("researchQuery");
+
+    const query =
+        input.value.trim();
+
+    const results =
+        document.getElementById("researchResults");
+
+    if (!query) {
+
+        results.innerHTML =
+            "<p>Please enter a search term.</p>";
+
+        return;
+    }
+
+    results.innerHTML =
+        "<p>Searching legal research database...</p>";
+
+    try {
+
+        const url =
+            "https://indiacode.ecourtsindia.com/api/v1/search?q="
+            + encodeURIComponent(query)
+            + "&limit=10";
+
+        const response =
+            await fetch(url);
+
+        if (!response.ok) {
+            throw new Error("Search failed");
+        }
+
+        const data =
+            await response.json();
+
+        results.innerHTML = "";
+
+        if (!data.results || data.results.length === 0) {
+
+            results.innerHTML =
+                "<p>No matching legal material found.</p>";
+
+            return;
+        }
+
+        data.results.forEach(item => {
+
+            const div =
+                document.createElement("div");
+
+            div.className = "result";
+
+            const title =
+                item.title ||
+                item.heading ||
+                item.section ||
+                "Legal provision";
+
+            const url =
+                item.url || "#";
+
+            div.innerHTML =
+                "<strong>"
+                + escapeHTML(title)
+                + "</strong><br>"
+                + "<a href='"
+                + escapeAttribute(url)
+                + "' target='_blank' rel='noopener noreferrer'>"
+                + "Open research result →"
+                + "</a>";
+
+            results.appendChild(div);
+
+        });
+
+    } catch (error) {
+
+        results.innerHTML =
+            "<p>"
+            + "<strong>Research service temporarily unavailable.</strong><br>"
+            + "Please try again or use the official India Code source."
+            + "</p>";
+
+    }
+
+}
+
+
+/* =========================
+   BASIC HTML SAFETY
+========================= */
+
+function escapeHTML(value) {
+
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+function escapeAttribute(value) {
+
+    return String(value)
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+</script>
 
 </body>
 </html>
