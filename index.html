@@ -7,7 +7,7 @@
     <title>LegalKant | Legal Knowledge Simplified</title>
 
     <meta name="description"
-        content="LegalKant is a law student's platform for legal knowledge, case laws, research and practical legal resources.">
+        content="LegalKant - A law student's platform for legal knowledge, case laws, research, drafting and study resources.">
 
     <style>
         * {
@@ -22,7 +22,7 @@
 
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background: #f8fafc;
+            background: #f6f8fb;
             color: #172033;
             line-height: 1.6;
         }
@@ -41,7 +41,7 @@
         }
 
         .logo {
-            font-size: 25px;
+            font-size: 26px;
             font-weight: bold;
             letter-spacing: 1px;
         }
@@ -68,21 +68,21 @@
 
         /* HERO */
         .hero {
-            min-height: 85vh;
+            min-height: 82vh;
             display: flex;
             align-items: center;
             padding: 70px 7%;
-            background: linear-gradient(135deg, #0b1f3a, #163d68);
+            background: linear-gradient(135deg, #0b1f3a, #173f6d);
             color: white;
         }
 
         .hero-content {
-            max-width: 750px;
+            max-width: 800px;
         }
 
         .hero h1 {
-            font-size: 60px;
-            margin-bottom: 15px;
+            font-size: 64px;
+            margin-bottom: 10px;
         }
 
         .hero h1 span {
@@ -98,6 +98,7 @@
         .hero p {
             font-size: 18px;
             color: #dce6f2;
+            max-width: 700px;
             margin-bottom: 30px;
         }
 
@@ -109,20 +110,13 @@
             border-radius: 6px;
             text-decoration: none;
             font-weight: bold;
-            margin-right: 10px;
         }
 
         .btn:hover {
             background: white;
         }
 
-        .btn-outline {
-            background: transparent;
-            border: 1px solid white;
-            color: white;
-        }
-
-        /* SECTIONS */
+        /* GENERAL SECTIONS */
         section {
             padding: 75px 7%;
         }
@@ -133,7 +127,7 @@
         }
 
         .section-title h2 {
-            font-size: 35px;
+            font-size: 36px;
             color: #0b1f3a;
             margin-bottom: 10px;
         }
@@ -155,37 +149,76 @@
             color: #475569;
         }
 
-        /* CARDS */
-        .cards {
+        /* RESOURCE GRID */
+        .resource-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
+            max-width: 1200px;
+            margin: auto;
         }
 
-        .card {
+        .resource-card {
             background: white;
-            padding: 30px;
-            border-radius: 10px;
+            padding: 32px 28px;
+            border-radius: 12px;
             border: 1px solid #e2e8f0;
+            text-decoration: none;
+            color: inherit;
             transition: 0.3s;
+            display: block;
         }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        .resource-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+            border-color: #d4af37;
         }
 
-        .card-icon {
-            font-size: 35px;
+        .resource-icon {
+            font-size: 40px;
             margin-bottom: 15px;
         }
 
-        .card h3 {
+        .resource-card h3 {
+            color: #0b1f3a;
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .resource-card p {
+            color: #64748b;
+            font-size: 15px;
+        }
+
+        .learn {
+            display: inline-block;
+            margin-top: 18px;
+            color: #0b1f3a;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* FEATURED */
+        .featured {
+            background: #eef3f8;
+        }
+
+        .featured-box {
+            max-width: 1000px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            border-left: 5px solid #d4af37;
+        }
+
+        .featured-box h3 {
             color: #0b1f3a;
             margin-bottom: 10px;
         }
 
-        .card p {
+        .featured-box p {
             color: #64748b;
         }
 
@@ -199,8 +232,8 @@
         }
 
         .disclaimer h3 {
-            margin-bottom: 8px;
             color: #0b1f3a;
+            margin-bottom: 8px;
         }
 
         /* CONTACT */
@@ -230,7 +263,7 @@
         }
 
         /* MOBILE */
-        @media (max-width: 800px) {
+        @media (max-width: 850px) {
 
             nav {
                 flex-direction: column;
@@ -238,25 +271,25 @@
             }
 
             nav ul {
-                gap: 12px;
+                gap: 15px;
                 flex-wrap: wrap;
                 justify-content: center;
             }
 
             .hero {
                 text-align: center;
-                min-height: 75vh;
+                min-height: 70vh;
             }
 
             .hero h1 {
-                font-size: 42px;
+                font-size: 45px;
             }
 
             .hero h2 {
                 font-size: 22px;
             }
 
-            .cards {
+            .resource-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -267,6 +300,7 @@
 
     <!-- NAVIGATION -->
     <nav>
+
         <div class="logo">
             Legal<span>Kant</span>
         </div>
@@ -278,6 +312,7 @@
             <li><a href="#articles">Articles</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
     </nav>
 
 
@@ -291,17 +326,12 @@
             <h2>Legal Knowledge. Simplified.</h2>
 
             <p>
-                A law student's platform dedicated to making legal knowledge,
-                case laws, research and practical legal resources easier
-                to understand and access.
+                A law student's platform for legal knowledge, case laws,
+                legal research, drafting resources and study material.
             </p>
 
             <a href="#resources" class="btn">
-                Explore Resources
-            </a>
-
-            <a href="#about" class="btn btn-outline">
-                About LegalKant
+                Explore Legal Resources
             </a>
 
         </div>
@@ -313,25 +343,28 @@
     <section class="about" id="about">
 
         <div class="section-title">
+
             <h2>About LegalKant</h2>
-            <p>Learning law. Sharing knowledge. Growing together.</p>
+
+            <p>
+                Learning law. Researching law. Sharing knowledge.
+            </p>
+
         </div>
 
         <div class="about-content">
 
             <p>
-                LegalKant is a law student's initiative created to explore,
-                research and share legal knowledge in a simple and accessible
-                format.
+                LegalKant is a law student's initiative created to make
+                legal knowledge easier to understand and access.
             </p>
 
             <br>
 
             <p>
-                The platform aims to provide useful legal resources,
-                case-law information, legal articles and study material
-                for law students and anyone interested in understanding
-                the law.
+                The platform brings together legal resources, case laws,
+                research material, drafting guidance and educational
+                content for law students and people interested in law.
             </p>
 
         </div>
@@ -347,110 +380,155 @@
             <h2>Legal Resources</h2>
 
             <p>
-                Explore different areas of legal learning and research.
+                Explore LegalKant's growing collection of legal resources.
             </p>
 
         </div>
 
 
-        <div class="cards">
+        <div class="resource-grid">
 
-            <div class="card">
+            <!-- BARE ACTS -->
+            <a href="bare-acts.html" class="resource-card">
 
-                <div class="card-icon">⚖️</div>
+                <div class="resource-icon">🏛️</div>
+
+                <h3>Bare Acts</h3>
+
+                <p>
+                    Explore important Indian laws, statutes and legislative
+                    resources for legal study and research.
+                </p>
+
+                <span class="learn">
+                    Explore →
+                </span>
+
+            </a>
+
+
+            <!-- CASE LAWS -->
+            <a href="case-laws.html" class="resource-card">
+
+                <div class="resource-icon">⚖️</div>
 
                 <h3>Case Laws</h3>
 
                 <p>
-                    Explore important judicial decisions and understand
+                    Discover important judicial decisions and understand
                     their legal principles and significance.
                 </p>
 
-            </div>
+                <span class="learn">
+                    Explore →
+                </span>
+
+            </a>
 
 
-            <div class="card">
+            <!-- LEGAL RESEARCH -->
+            <a href="legal-research.html" class="resource-card">
 
-                <div class="card-icon">📚</div>
+                <div class="resource-icon">🔎</div>
 
                 <h3>Legal Research</h3>
 
                 <p>
-                    Resources and guidance for students interested in
-                    legal research and academic learning.
+                    Learn research methods, legal databases, citation
+                    techniques and research strategies.
                 </p>
 
-            </div>
+                <span class="learn">
+                    Explore →
+                </span>
+
+            </a>
 
 
-            <div class="card">
+            <!-- LEGAL DRAFTING -->
+            <a href="legal-drafting.html" class="resource-card">
 
-                <div class="card-icon">📄</div>
+                <div class="resource-icon">📝</div>
 
-                <h3>Legal Documents</h3>
+                <h3>Legal Drafting</h3>
 
                 <p>
-                    Learn about commonly used legal documents,
-                    agreements and drafting concepts.
+                    Learn the basics of legal notices, agreements,
+                    applications and other legal documents.
                 </p>
 
-            </div>
+                <span class="learn">
+                    Explore →
+                </span>
+
+            </a>
+
+
+            <!-- STUDY RESOURCES -->
+            <a href="study-resources.html" class="resource-card">
+
+                <div class="resource-icon">📚</div>
+
+                <h3>Study Resources</h3>
+
+                <p>
+                    Helpful resources for law students, including subjects,
+                    notes, concepts and examination preparation.
+                </p>
+
+                <span class="learn">
+                    Explore →
+                </span>
+
+            </a>
+
+
+            <!-- LEGAL ARTICLES -->
+            <a href="articles.html" class="resource-card">
+
+                <div class="resource-icon">📰</div>
+
+                <h3>Legal Articles</h3>
+
+                <p>
+                    Read simple explanations, legal discussions and
+                    educational articles on different areas of law.
+                </p>
+
+                <span class="learn">
+                    Read Articles →
+                </span>
+
+            </a>
 
         </div>
 
     </section>
 
 
-    <!-- ARTICLES -->
-    <section id="articles" class="about">
+    <!-- FEATURED -->
+    <section class="featured">
 
         <div class="section-title">
 
-            <h2>Legal Articles</h2>
+            <h2>Featured on LegalKant</h2>
 
             <p>
-                Simple explanations of legal concepts and developments.
+                More legal resources will be added regularly.
             </p>
 
         </div>
 
+        <div class="featured-box">
 
-        <div class="cards">
+            <h3>Building a Student-Friendly Legal Resource</h3>
 
-            <div class="card">
-
-                <h3>Constitutional Law</h3>
-
-                <p>
-                    Learn about fundamental rights, constitutional
-                    principles and important concepts.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Corporate Law</h3>
-
-                <p>
-                    Explore basic concepts relating to companies,
-                    businesses and corporate regulations.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Consumer Law</h3>
-
-                <p>
-                    Understand consumer rights and important legal
-                    concepts related to consumer protection.
-                </p>
-
-            </div>
+            <p>
+                LegalKant is being developed as an educational platform
+                where law students can discover legal resources,
+                research material and practical learning content in one
+                place.
+            </p>
 
         </div>
 
@@ -465,10 +543,10 @@
             <h3>Legal Information Disclaimer</h3>
 
             <p>
-                The information provided on LegalKant is for educational
-                and informational purposes only. It should not be considered
-                legal advice or a substitute for consultation with a
-                qualified legal professional.
+                The information provided on LegalKant is intended for
+                educational and informational purposes only. It does not
+                constitute legal advice and should not be treated as a
+                substitute for professional legal consultation.
             </p>
 
         </div>
@@ -482,12 +560,12 @@
         <h2>Connect with LegalKant</h2>
 
         <p>
-            Building a platform for learning, researching and
-            understanding law.
+            A law student's journey towards learning, researching
+            and sharing legal knowledge.
         </p>
 
         <a href="mailto:contact@legalkant.com" class="btn">
-            Contact
+            Contact LegalKant
         </a>
 
     </section>
@@ -501,7 +579,7 @@
         </p>
 
         <p>
-            Created as a law student's legal knowledge platform.
+            Created by a law student for legal learning and research.
         </p>
 
     </footer>
