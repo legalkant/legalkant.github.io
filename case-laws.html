@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Laws | LegalKant</title>
+
+<style>
+:root{
+  --navy:#071525;
+  --navy2:#0d2038;
+  --gold:#d4af37;
+  --gold2:#f0d77a;
+  --bg:#f5f7fa;
+  --card:#fff;
+  --text:#17202a;
+  --muted:#667085;
+  --border:#e3e7ed;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.65;
+}
+
+header{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  padding:18px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+
+.logo{
+  color:var(--gold);
+  font-size:28px;
+  font-weight:800;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:18px;
+  font-size:13px;
+  font-weight:bold;
+}
+
+nav a:hover{color:var(--gold2)}
+
+.hero{
+  background:linear-gradient(135deg,var(--navy),var(--navy2));
+  color:white;
+  text-align:center;
+  padding:60px 20px;
+}
+
+.hero h1{
+  font-size:40px;
+  margin:0 0 10px;
+}
+
+.hero h1 span{color:var(--gold)}
+
+.hero p{
+  max-width:780px;
+  margin:auto;
+  color:#dce5ef;
+}
+
+.container{
+  max-width:1150px;
+  margin:auto;
+  padding:45px 20px 70px;
+}
+
+.search{
+  width:100%;
+  padding:14px;
+  border:1px solid var(--border);
+  border-radius:9px;
+  font-size:15px;
+  margin-bottom:25px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+}
+
+.card{
+  background:white;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:24px;
+  box-shadow:0 6px 20px rgba(0,0,0,.06);
+}
+
+.card h2{
+  color:var(--navy);
+  margin-top:0;
+  font-size:21px;
+}
+
+.meta{
+  color:var(--gold);
+  font-size:13px;
+  font-weight:bold;
+}
+
+.card p{
+  color:#4b5563;
+  font-size:14px;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--navy);
+  color:white;
+  padding:9px 13px;
+  border-radius:7px;
+  text-decoration:none;
+  font-size:12px;
+  font-weight:bold;
+  margin-top:8px;
+}
+
+.btn:hover{
+  background:#183452;
+}
+
+.notice{
+  margin-top:35px;
+  background:#fffdf5;
+  border:1px solid #eadb9b;
+  border-left:5px solid var(--gold);
+  padding:20px;
+  border-radius:9px;
+}
+
+footer{
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  padding:42px 20px 25px;
+}
+
+.footer-logo{
+  color:var(--gold);
+  font-size:27px;
+  font-weight:800;
+}
+
+.creator{
+  max-width:760px;
+  margin:12px auto;
+  color:#d7e0ea;
+  font-size:14px;
+}
+
+.contact{
+  margin:18px 0;
+}
+
+.contact a{
+  color:var(--gold2);
+  font-weight:bold;
+}
+
+.copy{
+  border-top:1px solid rgba(255,255,255,.15);
+  margin-top:20px;
+  padding-top:18px;
+  color:#aeb9c6;
+  font-size:12px;
+}
+
+@media(max-width:850px){
+  header{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  nav{
+    text-align:center;
+  }
+
+  nav a{
+    margin:5px;
+    display:inline-block;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero h1{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">LegalKant</div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="bare-acts.html">Bare Acts</a>
+    <a href="case-laws.html">Case Laws</a>
+    <a href="legal-research.html">Research</a>
+    <a href="legal-drafting.html">Drafting</a>
+    <a href="study-resources.html">Study</a>
+    <a href="articles.html">Articles</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Indian <span>Case Laws</span></h1>
+
+  <p>
+    Study important Indian judgments, constitutional decisions
+    and leading legal principles using authoritative sources.
+  </p>
+</section>
+
+<main class="container">
+
+<input
+  class="search"
+  id="search"
+  type="search"
+  placeholder="Search case name, subject or citation..."
+>
+
+<div class="grid" id="cases">
+
+<article class="card">
+<h2>Kesavananda Bharati v. State of Kerala</h2>
+<div class="meta">Constitutional Law · (1973) 4 SCC 225</div>
+
+<p>
+A landmark constitutional decision associated with the
+Basic Structure Doctrine and the limits of Parliament's
+constitutional amending power.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/document/his-holiness-kesavananda-bharati-v-state-of-kerala-1973-supp-scr-1/"
+target="_blank">
+Official Supreme Court Source
+</a>
+</article>
+
+<article class="card">
+<h2>Maneka Gandhi v. Union of India</h2>
+<div class="meta">Fundamental Rights · (1978) 1 SCC 248</div>
+
+<p>
+An important Article 21 decision concerning personal liberty
+and constitutional protection of individual rights.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/landmark-judgment-summaries/"
+target="_blank">
+Supreme Court Source
+</a>
+</article>
+
+<article class="card">
+<h2>Minerva Mills Ltd. v. Union of India</h2>
+<div class="meta">Constitutional Law · (1980) 3 SCC 625</div>
+
+<p>
+A leading constitutional-amendment case concerning the
+Basic Structure Doctrine and constitutional limitations.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/landmark-judgment-summaries/"
+target="_blank">
+Supreme Court Source
+</a>
+</article>
+
+<article class="card">
+<h2>D.K. Basu v. State of West Bengal</h2>
+<div class="meta">Criminal Justice · (1997) 1 SCC 416</div>
+
+<p>
+Important decision concerning safeguards relating to arrest,
+detention and protection of individual liberty.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/landmark-judgment-summaries/"
+target="_blank">
+Supreme Court Source
+</a>
+</article>
+
+<article class="card">
+<h2>Vishaka v. State of Rajasthan</h2>
+<div class="meta">Constitutional / Labour Law · (1997) 6 SCC 241</div>
+
+<p>
+Important decision concerning safeguards against sexual
+harassment at the workplace.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/landmark-judgment-summaries/"
+target="_blank">
+Supreme Court Source
+</a>
+</article>
+
+<article class="card">
+<h2>Shreya Singhal v. Union of India</h2>
+<div class="meta">Constitutional / Technology Law · (2015) 5 SCC 1</div>
+
+<p>
+Important free-speech decision concerning Section 66A
+of the Information Technology Act, 2000.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/landmark-judgment-summaries/"
+target="_blank">
+Supreme Court Source
+</a>
+</article>
+
+<article class="card">
+<h2>Justice K.S. Puttaswamy v. Union of India</h2>
+<div class="meta">Privacy · (2017) 10 SCC 1</div>
+
+<p>
+Constitution Bench decision recognising privacy as a
+constitutionally protected right.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/landmark-judgment-summaries/"
+target="_blank">
+Supreme Court Source
+</a>
+</article>
+
+<article class="card">
+<h2>Navtej Singh Johar v. Union of India</h2>
+<div class="meta">Constitutional Law · (2018) 10 SCC 1</div>
+
+<p>
+Constitution Bench decision concerning constitutional
+rights and Section 377 IPC as applied to consensual
+same-sex relations between adults.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/landmark-judgment-summaries/"
+target="_blank">
+Supreme Court Source
+</a>
+</article>
+
+<article class="card">
+<h2>Joseph Shine v. Union of India</h2>
+<div class="meta">Constitutional / Criminal Law · (2019) 3 SCC 39</div>
+
+<p>
+Constitution Bench decision concerning Section 497 IPC
+and constitutional principles relating to adultery.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/landmark-judgment-summaries/"
+target="_blank">
+Supreme Court Source
+</a>
+</article>
+
+</div>
+
+<div class="notice">
+<h3>Case Law Research Note</h3>
+<p>
+Always read the actual judgment before relying upon a case
+in an assignment, legal opinion, pleading or other legal work.
+A case summary should not be treated as a substitute for the judgment.
+</p>
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-logo">LegalKant</div>
+
+<p>Legal Knowledge. Simplified.</p>
+
+<div class="creator">
+LegalKant is created by Rama Kant, a law student, with the aim of making
+legal learning, research, and educational resources more accessible and practical.
+</div>
+
+<div class="contact">
+📧 Contact:
+<a href="mailto:ramakant.legal@gmail.com">
+ramakant.legal@gmail.com
+</a>
+</div>
+
+<div class="copy">
+© 2026 LegalKant. All Rights Reserved.
+</div>
+
+</footer>
+
+<script>
+const search=document.getElementById("search");
+
+search.addEventListener("input",function(){
+
+const value=this.value.toLowerCase();
+
+document.querySelectorAll(".card").forEach(function(card){
+
+card.style.display=
+card.innerText.toLowerCase().includes(value)
+?"block":"none";
+
+});
+
+});
+</script>
+
+</body>
+</html>
