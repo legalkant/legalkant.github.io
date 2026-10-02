@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Study Resources | LegalKant</title>
+
+<style>
+
+:root{
+--navy:#071525;
+--navy2:#0d2038;
+--gold:#d4af37;
+--gold2:#f0d77a;
+--bg:#f5f7fa;
+--border:#e3e7ed;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--bg);
+color:#17202a;
+line-height:1.65;
+}
+
+header{
+background:linear-gradient(135deg,var(--navy),var(--navy2));
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.logo{
+color:var(--gold);
+font-size:28px;
+font-weight:800;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-size:13px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:var(--gold2);
+}
+
+.hero{
+background:linear-gradient(135deg,var(--navy),var(--navy2));
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin:0 0 10px;
+}
+
+.hero h1 span{
+color:var(--gold);
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+color:#dce5ef;
+}
+
+.container{
+max-width:1150px;
+margin:auto;
+padding:45px 20px 70px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
+}
+
+.card{
+background:white;
+border:1px solid var(--border);
+border-radius:14px;
+padding:24px;
+box-shadow:0 6px 20px rgba(0,0,0,.06);
+}
+
+.card h2{
+color:var(--navy);
+margin-top:0;
+}
+
+.card p{
+font-size:14px;
+color:#4b5563;
+}
+
+.btn{
+display:inline-block;
+background:var(--navy);
+color:white;
+padding:9px 13px;
+border-radius:7px;
+text-decoration:none;
+font-size:12px;
+font-weight:bold;
+}
+
+.notice{
+margin-top:30px;
+background:#fffdf5;
+border:1px solid #eadb9b;
+border-left:5px solid var(--gold);
+padding:20px;
+border-radius:9px;
+}
+
+footer{
+background:var(--navy);
+color:white;
+text-align:center;
+padding:42px 20px 25px;
+}
+
+.footer-logo{
+color:var(--gold);
+font-size:27px;
+font-weight:800;
+}
+
+.creator{
+max-width:760px;
+margin:12px auto;
+color:#d7e0ea;
+font-size:14px;
+}
+
+.contact{
+margin:18px 0;
+}
+
+.contact a{
+color:var(--gold2);
+font-weight:bold;
+}
+
+.copy{
+border-top:1px solid rgba(255,255,255,.15);
+margin-top:20px;
+padding-top:18px;
+color:#aeb9c6;
+font-size:12px;
+}
+
+@media(max-width:850px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+nav{
+text-align:center;
+}
+
+nav a{
+display:inline-block;
+margin:5px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">LegalKant</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="bare-acts.html">Bare Acts</a>
+<a href="case-laws.html">Case Laws</a>
+<a href="legal-research.html">Research</a>
+<a href="legal-drafting.html">Drafting</a>
+<a href="study-resources.html">Study</a>
+<a href="articles.html">Articles</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Study <span>Resources</span></h1>
+
+<p>
+Structured legal-learning resources for LLB students,
+revision and academic preparation.
+</p>
+
+</section>
+
+<main class="container">
+
+<div class="grid">
+
+<article class="card">
+<h2>Constitutional Law</h2>
+<p>
+Preamble, Fundamental Rights, Directive Principles,
+Fundamental Duties, constitutional institutions,
+judicial review, amendments and basic structure.
+</p>
+</article>
+
+<article class="card">
+<h2>Contract Law</h2>
+<p>
+Proposal, acceptance, consideration, capacity,
+free consent, legality, void agreements, performance,
+breach and remedies.
+</p>
+</article>
+
+<article class="card">
+<h2>Law of Torts</h2>
+<p>
+Negligence, nuisance, trespass, strict and absolute
+liability, defamation and vicarious liability.
+</p>
+</article>
+
+<article class="card">
+<h2>BNS — Criminal Law</h2>
+<p>
+Study offences, general exceptions, abetment, attempt
+and offence-specific statutory ingredients.
+</p>
+
+<a class="btn" href="bare-acts.html">
+Open Bare Acts
+</a>
+</article>
+
+<article class="card">
+<h2>BNSS — Criminal Procedure</h2>
+<p>
+Arrest, investigation, complaints, bail, inquiry,
+trial, appeals and procedural safeguards.
+</p>
+</article>
+
+<article class="card">
+<h2>BSA — Evidence</h2>
+<p>
+Relevancy, admissions, confessions, documentary and
+electronic evidence, burden of proof and witnesses.
+</p>
+</article>
+
+<article class="card">
+<h2>Property Law</h2>
+<p>
+Transfer of property, sale, mortgage, lease, exchange,
+gift and related property-law doctrines.
+</p>
+</article>
+
+<article class="card">
+<h2>Company Law</h2>
+<p>
+Incorporation, share capital, directors, meetings,
+management, accounts, audit and corporate compliance.
+</p>
+</article>
+
+<article class="card">
+<h2>Consumer Law</h2>
+<p>
+Consumer rights, product liability, unfair trade practices,
+consumer commissions and dispute redressal.
+</p>
+</article>
+
+<article class="card">
+<h2>Jurisprudence</h2>
+<p>
+Nature of law, rights, duties, possession, ownership,
+liability, legal personality and jurisprudential schools.
+</p>
+</article>
+
+<article class="card">
+<h2>CPC & Civil Procedure</h2>
+<p>
+Jurisdiction, pleadings, summons, issues, judgments,
+decrees, execution, appeals, review and revision.
+</p>
+</article>
+
+<article class="card">
+<h2>Administrative Law</h2>
+<p>
+Delegated legislation, natural justice, judicial review,
+administrative discretion and legal remedies.
+</p>
+</article>
+
+</div>
+
+<div class="notice">
+
+<h3>Study Method</h3>
+
+<p>
+Read the Bare Act first. Mark definitions, exceptions and
+important provisions. Prepare section-wise notes, then study
+leading judgments and solve practical legal problems.
+</p>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-logo">LegalKant</div>
+
+<p>Legal Knowledge. Simplified.</p>
+
+<div class="creator">
+LegalKant is created by Rama Kant, a law student, with the aim of making
+legal learning, research, and educational resources more accessible and practical.
+</div>
+
+<div class="contact">
+📧 Contact:
+<a href="mailto:ramakant.legal@gmail.com">
+ramakant.legal@gmail.com
+</a>
+</div>
+
+<div class="copy">
+© 2026 LegalKant. All Rights Reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
