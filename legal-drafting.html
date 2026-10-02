@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Legal Drafting | LegalKant</title>
+
+<style>
+:root{
+--navy:#071525;
+--navy2:#0d2038;
+--gold:#d4af37;
+--gold2:#f0d77a;
+--bg:#f5f7fa;
+--border:#e3e7ed;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--bg);
+color:#17202a;
+line-height:1.65;
+}
+
+header{
+background:linear-gradient(135deg,var(--navy),var(--navy2));
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.logo{
+color:var(--gold);
+font-size:28px;
+font-weight:800;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-size:13px;
+font-weight:bold;
+}
+
+nav a:hover{color:var(--gold2)}
+
+.hero{
+background:linear-gradient(135deg,var(--navy),var(--navy2));
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin:0 0 10px;
+}
+
+.hero h1 span{color:var(--gold)}
+
+.hero p{
+max-width:800px;
+margin:auto;
+color:#dce5ef;
+}
+
+.container{
+max-width:1150px;
+margin:auto;
+padding:45px 20px 70px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
+}
+
+.card{
+background:white;
+border:1px solid var(--border);
+border-radius:14px;
+padding:24px;
+box-shadow:0 6px 20px rgba(0,0,0,.06);
+}
+
+.card h2{
+color:var(--navy);
+margin-top:0;
+}
+
+.meta{
+color:var(--gold);
+font-weight:bold;
+font-size:13px;
+}
+
+.card p{
+font-size:14px;
+color:#4b5563;
+}
+
+.btn{
+display:inline-block;
+background:var(--navy);
+color:white;
+padding:9px 13px;
+border-radius:7px;
+text-decoration:none;
+font-size:12px;
+font-weight:bold;
+margin-top:8px;
+}
+
+.notice{
+margin-top:30px;
+background:#fffdf5;
+border:1px solid #eadb9b;
+border-left:5px solid var(--gold);
+padding:20px;
+border-radius:9px;
+}
+
+footer{
+background:var(--navy);
+color:white;
+text-align:center;
+padding:42px 20px 25px;
+}
+
+.footer-logo{
+color:var(--gold);
+font-size:27px;
+font-weight:800;
+}
+
+.creator{
+max-width:760px;
+margin:12px auto;
+color:#d7e0ea;
+font-size:14px;
+}
+
+.contact{margin:18px 0}
+
+.contact a{
+color:var(--gold2);
+font-weight:bold;
+}
+
+.copy{
+border-top:1px solid rgba(255,255,255,.15);
+margin-top:20px;
+padding-top:18px;
+color:#aeb9c6;
+font-size:12px;
+}
+
+@media(max-width:850px){
+header{
+flex-direction:column;
+gap:12px;
+}
+
+nav{
+text-align:center;
+}
+
+nav a{
+display:inline-block;
+margin:5px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:32px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">LegalKant</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="bare-acts.html">Bare Acts</a>
+<a href="case-laws.html">Case Laws</a>
+<a href="legal-research.html">Research</a>
+<a href="legal-drafting.html">Drafting</a>
+<a href="study-resources.html">Study</a>
+<a href="articles.html">Articles</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Legal <span>Drafting</span></h1>
+
+<p>
+Practical drafting resources and document structures for law students
+and legal learners.
+</p>
+
+</section>
+
+<main class="container">
+
+<div class="grid">
+
+<article class="card">
+<h2>Legal Notice</h2>
+<div class="meta">Pre-litigation communication</div>
+<p>
+Learn the structure of a legal notice, including facts, legal basis,
+demand, response period and consequences of non-compliance.
+</p>
+</article>
+
+<article class="card">
+<h2>Reply to Legal Notice</h2>
+<div class="meta">Response drafting</div>
+<p>
+Understand paragraph-wise responses, admissions, denials, factual
+corrections and appropriate legal positions.
+</p>
+</article>
+
+<article class="card">
+<h2>Affidavit</h2>
+<div class="meta">Sworn statement</div>
+<p>
+Study the basic structure of an affidavit, verification and
+attestation requirements applicable to the relevant proceeding.
+</p>
+</article>
+
+<article class="card">
+<h2>Plaint</h2>
+<div class="meta">Civil litigation</div>
+<p>
+Study parties, jurisdiction, cause of action, limitation, valuation,
+reliefs and verification under applicable procedural law.
+</p>
+</article>
+
+<article class="card">
+<h2>Written Statement</h2>
+<div class="meta">Civil defence</div>
+<p>
+Learn preliminary objections, paragraph-wise responses, admissions,
+denials and additional pleadings.
+</p>
+</article>
+
+<article class="card">
+<h2>Consumer Complaint</h2>
+<div class="meta">Consumer Law</div>
+<p>
+Learn how to organise consumer status, transaction documents,
+allegations, jurisdiction and reliefs.
+</p>
+</article>
+
+<article class="card">
+<h2>Legal Agreements</h2>
+<div class="meta">Contract Drafting</div>
+<p>
+Study parties, definitions, scope, consideration, obligations,
+confidentiality, indemnity, termination and dispute resolution.
+</p>
+</article>
+
+<article class="card">
+<h2>Legal Opinion</h2>
+<div class="meta">Legal Advisory Writing</div>
+<p>
+Use the structure: Instructions → Facts → Questions → Applicable Law
+→ Analysis → Conclusion.
+</p>
+</article>
+
+</div>
+
+<div class="notice">
+
+<h3>Drafting Principle</h3>
+
+<p>
+Templates are starting points only. Every legal document must be
+adapted to the actual facts, applicable law, forum requirements and
+current amendments before use.
+</p>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-logo">LegalKant</div>
+
+<p>Legal Knowledge. Simplified.</p>
+
+<div class="creator">
+LegalKant is created by Rama Kant, a law student, with the aim of making
+legal learning, research, and educational resources more accessible and practical.
+</div>
+
+<div class="contact">
+📧 Contact:
+<a href="mailto:ramakant.legal@gmail.com">
+ramakant.legal@gmail.com
+</a>
+</div>
+
+<div class="copy">
+© 2026 LegalKant. All Rights Reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
