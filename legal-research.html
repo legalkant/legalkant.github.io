@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal Research | LegalKant</title>
+
+<style>
+:root{
+--navy:#071525;
+--navy2:#0d2038;
+--gold:#d4af37;
+--gold2:#f0d77a;
+--bg:#f5f7fa;
+--border:#e3e7ed;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--bg);
+color:#17202a;
+line-height:1.65;
+}
+
+header{
+background:linear-gradient(135deg,var(--navy),var(--navy2));
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.logo{
+color:var(--gold);
+font-size:28px;
+font-weight:800;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-size:13px;
+font-weight:bold;
+}
+
+nav a:hover{color:var(--gold2)}
+
+.hero{
+background:linear-gradient(135deg,var(--navy),var(--navy2));
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin:0 0 10px;
+}
+
+.hero h1 span{color:var(--gold)}
+
+.hero p{
+max-width:800px;
+margin:auto;
+color:#dce5ef;
+}
+
+.container{
+max-width:1150px;
+margin:auto;
+padding:45px 20px 70px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
+}
+
+.card{
+background:white;
+border:1px solid var(--border);
+border-radius:14px;
+padding:24px;
+box-shadow:0 6px 20px rgba(0,0,0,.06);
+}
+
+.card h2{
+color:var(--navy);
+margin-top:0;
+}
+
+.card p{
+color:#4b5563;
+font-size:14px;
+}
+
+.number{
+color:var(--gold);
+font-weight:bold;
+font-size:25px;
+}
+
+.btn{
+display:inline-block;
+background:var(--navy);
+color:white;
+padding:9px 13px;
+border-radius:7px;
+text-decoration:none;
+font-size:12px;
+font-weight:bold;
+margin-top:8px;
+}
+
+.notice{
+margin-top:30px;
+background:#fffdf5;
+border:1px solid #eadb9b;
+border-left:5px solid var(--gold);
+padding:20px;
+border-radius:9px;
+}
+
+footer{
+background:var(--navy);
+color:white;
+text-align:center;
+padding:42px 20px 25px;
+}
+
+.footer-logo{
+color:var(--gold);
+font-size:27px;
+font-weight:800;
+}
+
+.creator{
+max-width:760px;
+margin:12px auto;
+color:#d7e0ea;
+font-size:14px;
+}
+
+.contact{margin:18px 0}
+
+.contact a{
+color:var(--gold2);
+font-weight:bold;
+}
+
+.copy{
+border-top:1px solid rgba(255,255,255,.15);
+margin-top:20px;
+padding-top:18px;
+color:#aeb9c6;
+font-size:12px;
+}
+
+@media(max-width:850px){
+header{
+flex-direction:column;
+gap:12px;
+}
+
+nav{
+text-align:center;
+}
+
+nav a{
+display:inline-block;
+margin:5px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:32px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">LegalKant</div>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="bare-acts.html">Bare Acts</a>
+<a href="case-laws.html">Case Laws</a>
+<a href="legal-research.html">Research</a>
+<a href="legal-drafting.html">Drafting</a>
+<a href="study-resources.html">Study</a>
+<a href="articles.html">Articles</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Legal <span>Research</span></h1>
+
+<p>
+A practical research framework for law students and legal learners
+conducting Indian legal research.
+</p>
+
+</section>
+
+<main class="container">
+
+<div class="grid">
+
+<article class="card">
+<div class="number">01</div>
+<h2>Define the Legal Question</h2>
+<p>
+Convert the problem into a precise legal question. Identify the
+jurisdiction, relevant facts, date and area of law.
+</p>
+</article>
+
+<article class="card">
+<div class="number">02</div>
+<h2>Find the Governing Law</h2>
+<p>
+Start with the Constitution, applicable Acts, Rules, Regulations,
+notifications and amendments.
+</p>
+</article>
+
+<article class="card">
+<div class="number">03</div>
+<h2>Read the Relevant Sections</h2>
+<p>
+Read definitions, provisos, explanations, exceptions and schedules
+along with the main provision.
+</p>
+</article>
+
+<article class="card">
+<div class="number">04</div>
+<h2>Research Case Law</h2>
+<p>
+Search judgments using the statutory provision, legal issue, party
+names and citations. Always verify the actual judgment.
+</p>
+
+<a class="btn"
+href="https://scr.sci.gov.in/scrsearch/"
+target="_blank">
+Supreme Court Search
+</a>
+</article>
+
+<article class="card">
+<div class="number">05</div>
+<h2>Check Amendments</h2>
+<p>
+Confirm that the statutory text and relevant case law are current
+and check amendments, commencement notifications and related rules.
+</p>
+</article>
+
+<article class="card">
+<div class="number">06</div>
+<h2>Analyse the Authorities</h2>
+<p>
+Identify the ratio decidendi, relevant observations, factual
+distinctions and subsequent treatment of the judgment.
+</p>
+</article>
+
+<article class="card">
+<div class="number">07</div>
+<h2>Prepare Research Note</h2>
+<p>
+Use the structure: Question → Short Answer → Law → Authorities →
+Analysis → Counter-arguments → Conclusion.
+</p>
+</article>
+
+<article class="card">
+<div class="number">08</div>
+<h2>Verify Citations</h2>
+<p>
+Verify case name, citation, court, date, statutory provision and
+paragraph references before using an authority.
+</p>
+</article>
+
+</div>
+
+<div class="notice">
+
+<h3>Useful Official Research Resource</h3>
+
+<p>
+The Supreme Court of India provides legal research and library
+resources, including case-law and legislative research facilities.
+</p>
+
+<a class="btn"
+href="https://www.sci.gov.in/judges-library/"
+target="_blank">
+Supreme Court Judges Library
+</a>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-logo">LegalKant</div>
+
+<p>Legal Knowledge. Simplified.</p>
+
+<div class="creator">
+LegalKant is created by Rama Kant, a law student, with the aim of making
+legal learning, research, and educational resources more accessible and practical.
+</div>
+
+<div class="contact">
+📧 Contact:
+<a href="mailto:ramakant.legal@gmail.com">
+ramakant.legal@gmail.com
+</a>
+</div>
+
+<div class="copy">
+© 2026 LegalKant. All Rights Reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
