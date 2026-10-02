@@ -7,6 +7,7 @@
     <title>Legal Research | LegalKant</title>
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
@@ -20,10 +21,12 @@
             line-height: 1.7;
         }
 
+        /* HEADER */
+
         header {
             background: #071526;
             color: white;
-            padding: 22px 8%;
+            padding: 22px 7%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -31,69 +34,84 @@
         }
 
         .logo {
-            font-size: 27px;
+            font-size: 28px;
             font-weight: bold;
             color: #d4af37;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin-left: 20px;
-            font-size: 15px;
+            margin-left: 18px;
+            font-size: 14px;
         }
 
         nav a:hover {
             color: #d4af37;
         }
 
+
+        /* HERO */
+
         .hero {
             background: #0b1d33;
             color: white;
             text-align: center;
-            padding: 65px 20px;
+            padding: 70px 20px;
         }
 
         .hero h1 {
-            font-size: 42px;
-            margin-bottom: 12px;
+            font-size: 44px;
             color: #d4af37;
+            margin-bottom: 15px;
         }
 
         .hero p {
-            max-width: 800px;
+            max-width: 850px;
             margin: auto;
             font-size: 18px;
-            color: #d9e1eb;
+            color: #dce3ed;
         }
+
+
+        /* MAIN */
 
         .container {
             width: 90%;
             max-width: 1150px;
-            margin: 45px auto;
+            margin: 50px auto;
         }
 
         .section-title {
-            font-size: 29px;
-            margin-bottom: 12px;
+            font-size: 30px;
             color: #10243e;
+            margin-bottom: 10px;
         }
 
         .section-intro {
-            margin-bottom: 28px;
-            color: #4b5563;
+            color: #555f6d;
+            margin-bottom: 30px;
         }
+
+
+        /* CARDS */
 
         .research-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-            gap: 22px;
-            margin-bottom: 45px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 50px;
         }
 
         .card {
             background: white;
-            padding: 26px;
+            padding: 28px;
             border-radius: 12px;
             box-shadow: 0 5px 18px rgba(0,0,0,0.08);
             border-top: 4px solid #d4af37;
@@ -101,32 +119,42 @@
 
         .card h3 {
             color: #10243e;
-            margin-bottom: 12px;
             font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .card h4 {
+            color: #10243e;
+            margin-top: 18px;
+            margin-bottom: 8px;
         }
 
         .card p {
-            color: #505b6b;
+            color: #505b68;
             margin-bottom: 15px;
         }
 
         .card ul {
             padding-left: 20px;
-            color: #3f4a59;
+            color: #3f4a58;
         }
 
         .card li {
             margin-bottom: 7px;
         }
 
+
+        /* BUTTON */
+
         .btn {
             display: inline-block;
             background: #10243e;
             color: white;
+            text-decoration: none;
             padding: 10px 16px;
             border-radius: 6px;
-            text-decoration: none;
-            margin-top: 10px;
+            margin-top: 12px;
+            margin-right: 6px;
             font-size: 14px;
         }
 
@@ -135,24 +163,31 @@
             color: #071526;
         }
 
+
+        /* RESEARCH STEPS */
+
         .steps {
             background: white;
-            padding: 30px;
+            padding: 32px;
             border-radius: 12px;
             box-shadow: 0 5px 18px rgba(0,0,0,0.07);
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .step {
             display: flex;
             gap: 18px;
-            margin-bottom: 22px;
+            margin-bottom: 25px;
             align-items: flex-start;
         }
 
+        .step:last-child {
+            margin-bottom: 0;
+        }
+
         .step-number {
-            min-width: 38px;
-            height: 38px;
+            min-width: 40px;
+            height: 40px;
             border-radius: 50%;
             background: #10243e;
             color: #d4af37;
@@ -163,21 +198,28 @@
         }
 
         .step h3 {
-            margin-bottom: 4px;
             color: #10243e;
+            margin-bottom: 5px;
         }
+
+        .step p {
+            color: #555f6d;
+        }
+
+
+        /* OFFICIAL SOURCES */
 
         .source-box {
             background: #071526;
             color: white;
-            padding: 30px;
+            padding: 32px;
             border-radius: 12px;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .source-box h2 {
             color: #d4af37;
-            margin-bottom: 15px;
+            margin-bottom: 18px;
         }
 
         .source-box ul {
@@ -185,7 +227,7 @@
         }
 
         .source-box li {
-            margin-bottom: 12px;
+            margin-bottom: 18px;
         }
 
         .source-box a {
@@ -197,43 +239,56 @@
             text-decoration: underline;
         }
 
+
+        /* CHECKLIST */
+
         .checklist {
             background: white;
-            padding: 30px;
+            padding: 32px;
             border-radius: 12px;
             box-shadow: 0 5px 18px rgba(0,0,0,0.07);
-            margin-bottom: 45px;
+            margin-bottom: 50px;
+        }
+
+        .checklist ul {
+            list-style: none;
         }
 
         .checklist li {
-            margin-bottom: 12px;
-            list-style: none;
+            margin-bottom: 13px;
         }
 
         .checklist li::before {
             content: "✓";
-            color: #b08b16;
+            color: #b18a15;
             font-weight: bold;
             margin-right: 10px;
         }
 
+
+        /* NOTICE */
+
         .notice {
             background: #fff8df;
             border-left: 5px solid #d4af37;
-            padding: 20px;
-            margin-bottom: 45px;
-            color: #4c4324;
+            padding: 22px;
+            margin-bottom: 50px;
+            color: #4b4325;
+            border-radius: 5px;
         }
+
+
+        /* FOOTER */
 
         footer {
             background: #071526;
             color: #aebbd0;
             text-align: center;
-            padding: 28px 20px;
+            padding: 30px 20px;
         }
 
         footer p {
-            margin: 6px 0;
+            margin: 7px 0;
         }
 
         footer a {
@@ -241,7 +296,10 @@
             text-decoration: none;
         }
 
-        @media (max-width: 700px) {
+
+        /* MOBILE */
+
+        @media (max-width: 750px) {
 
             header {
                 justify-content: center;
@@ -249,16 +307,16 @@
             }
 
             nav {
-                margin-top: 12px;
+                margin-top: 15px;
             }
 
             nav a {
-                margin: 5px 8px;
                 display: inline-block;
+                margin: 5px 7px;
             }
 
             .hero h1 {
-                font-size: 32px;
+                font-size: 34px;
             }
 
             .hero p {
@@ -268,568 +326,974 @@
             .step {
                 gap: 12px;
             }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
+
+<!-- HEADER -->
+
 <header>
 
-    <div class="logo">LegalKant</div>
+    <div class="logo">
+        LegalKant
+    </div>
 
     <nav>
+
         <a href="index.html">Home</a>
+
         <a href="bare-acts.html">Bare Acts</a>
+
         <a href="case-laws.html">Case Laws</a>
+
         <a href="legal-research.html">Legal Research</a>
+
         <a href="legal-drafting.html">Legal Drafting</a>
+
         <a href="study-resources.html">Study Resources</a>
+
         <a href="articles.html">Articles</a>
+
     </nav>
 
 </header>
 
+
+
+<!-- HERO -->
 
 <section class="hero">
 
     <h1>Legal Research</h1>
 
     <p>
-        Learn how to find legislation, judgments, legal authorities and
-        reliable legal materials for academic and legal research.
+        A practical guide for law students to find legislation,
+        judgments, legal authorities and reliable legal research materials.
     </p>
 
 </section>
 
 
+
+<!-- MAIN CONTENT -->
+
 <div class="container">
 
-    <h2 class="section-title">What is Legal Research?</h2>
+
+    <!-- INTRODUCTION -->
+
+    <h2 class="section-title">
+        What is Legal Research?
+    </h2>
 
     <p class="section-intro">
-        Legal research is the systematic process of identifying, locating,
-        reading, analysing and applying legal authorities relevant to a
-        particular legal issue. A proper research process normally begins
-        with identifying the legal question and then examining the applicable
-        legislation, rules, judicial decisions and other reliable authorities.
+
+        Legal research is the systematic process of identifying,
+        locating, reading, analysing and applying legal authorities
+        relevant to a particular legal question.
+
+        A proper research process generally requires examination of
+        applicable legislation, rules, regulations, judicial decisions
+        and other reliable legal materials.
+
     </p>
+
 
 
     <!-- RESEARCH AREAS -->
 
-    <div class="research-grid">
+    <h2 class="section-title">
+        Areas of Legal Research
+    </h2>
 
-        <div class="card">
-
-            <h3>📜 Statutory Research</h3>
-
-            <p>
-                Find the legislation applicable to a legal issue and examine
-                the relevant provisions.
-            </p>
-
-            <ul>
-                <li>Identify the relevant Act</li>
-                <li>Check the Act number and year</li>
-                <li>Locate relevant sections</li>
-                <li>Check amendments</li>
-                <li>Read definitions and exceptions</li>
-            </ul>
-
-            <a class="btn"
-               href="https://www.indiacode.nic.in/indiacode/home.jsp"
-               target="_blank">
-                Search India Code
-            </a>
-
-        </div>
-
-
-       <div class="card">
-
-    <h3>📜 Statutory Research</h3>
-
-    <p>
-        Research Indian legislation directly from the Government of India's
-        India Code portal. Find Acts, sections, rules, regulations,
-        notifications and other legislative materials.
+    <p class="section-intro">
+        Explore different types of research used in legal education
+        and legal practice.
     </p>
 
-    <ul>
-        <li>Search Central and State legislation</li>
-        <li>Search Acts by name, year or number</li>
-        <li>Find individual sections and provisions</li>
-        <li>Check amendments and legislative history</li>
-        <li>Find subordinate legislation</li>
-        <li>Use official Government legal sources</li>
-    </ul>
 
-    <a class="btn"
-       href="https://indiacode.gov.in/"
-       target="_blank"
-       rel="noopener noreferrer">
-        Open New India Code
-    </a>
+    <div class="research-grid">
 
-    <a class="btn"
-       href="https://www.legislative.gov.in/document-category/list-of-central-acts/"
-       target="_blank"
-       rel="noopener noreferrer">
-        Central Acts
-    </a>
 
-</div>
-                Supreme Court Search
-            </a>
-
-        </div>
-
+        <!-- STATUTORY -->
 
         <div class="card">
 
-            <h3>🏛️ Constitutional Research</h3>
+            <h3>
+                📜 Statutory Research
+            </h3>
 
             <p>
-                Research constitutional provisions, amendments and
-                constitutional decisions.
+                Research Indian legislation through Government sources
+                and identify the provisions applicable to a legal issue.
             </p>
 
             <ul>
-                <li>Fundamental Rights</li>
-                <li>Directive Principles</li>
-                <li>Fundamental Duties</li>
-                <li>Constitutional amendments</li>
-                <li>Judicial interpretation</li>
+
+                <li>
+                    Search Acts and legislation
+                </li>
+
+                <li>
+                    Search sections and provisions
+                </li>
+
+                <li>
+                    Identify Acts by name, year or number
+                </li>
+
+                <li>
+                    Check amendments and legislative material
+                </li>
+
+                <li>
+                    Research rules and regulations
+                </li>
+
+                <li>
+                    Verify the applicable statutory provision
+                </li>
+
             </ul>
+
 
             <a class="btn"
-               href="https://legislative.gov.in/constitution-of-india"
-               target="_blank">
-                Constitution Source
+               href="https://indiacode.gov.in/"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                Open New India Code
+
+            </a>
+
+
+            <a class="btn"
+               href="https://www.legislative.gov.in/"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                Legislative Department
+
             </a>
 
         </div>
 
 
+
+        <!-- CASE LAW -->
+
         <div class="card">
 
-            <h3>📚 Case Citation Research</h3>
+            <h3>
+                ⚖️ Case Law Research
+            </h3>
 
             <p>
-                Verify the identity and citation details of a judgment before
-                relying upon it in academic or legal writing.
+                Research judicial decisions to understand how courts
+                interpret and apply legal provisions.
             </p>
 
             <ul>
-                <li>Case title</li>
-                <li>Case number</li>
-                <li>Judgment date</li>
-                <li>Neutral citation where available</li>
-                <li>Official judgment source</li>
+
+                <li>
+                    Search by case name
+                </li>
+
+                <li>
+                    Search by case number
+                </li>
+
+                <li>
+                    Search by judgment date
+                </li>
+
+                <li>
+                    Search by keywords
+                </li>
+
+                <li>
+                    Identify relevant judgments
+                </li>
+
+                <li>
+                    Read the actual judgment
+                </li>
+
             </ul>
+
+
+            <a class="btn"
+               href="https://verdictfinder.sci.gov.in/elk_frontend/index.php"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                Search Supreme Court Judgments
+
+            </a>
+
+        </div>
+
+
+
+        <!-- CONSTITUTIONAL -->
+
+        <div class="card">
+
+            <h3>
+                🏛️ Constitutional Research
+            </h3>
+
+            <p>
+                Study constitutional provisions, amendments and
+                judicial interpretation of constitutional principles.
+            </p>
+
+            <ul>
+
+                <li>
+                    Fundamental Rights
+                </li>
+
+                <li>
+                    Directive Principles
+                </li>
+
+                <li>
+                    Fundamental Duties
+                </li>
+
+                <li>
+                    Constitutional amendments
+                </li>
+
+                <li>
+                    Constitutional interpretation
+                </li>
+
+                <li>
+                    Important constitutional judgments
+                </li>
+
+            </ul>
+
+
+            <a class="btn"
+               href="https://www.legislative.gov.in/"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                Official Source
+
+            </a>
+
+        </div>
+
+
+
+        <!-- CITATION -->
+
+        <div class="card">
+
+            <h3>
+                📚 Case Citation Research
+            </h3>
+
+            <p>
+                Verify case details before using a judgment as a
+                legal authority in academic or professional research.
+            </p>
+
+            <ul>
+
+                <li>
+                    Case title
+                </li>
+
+                <li>
+                    Case number
+                </li>
+
+                <li>
+                    Judgment date
+                </li>
+
+                <li>
+                    Citation details
+                </li>
+
+                <li>
+                    Court and bench
+                </li>
+
+                <li>
+                    Official judgment source
+                </li>
+
+            </ul>
+
 
             <a class="btn"
                href="https://www.sci.gov.in/"
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
+
                 Supreme Court Website
+
             </a>
 
         </div>
 
 
-       <div class="card">
 
-    <h3>🔎 Legal Issue Research</h3>
+        <!-- LEGAL ISSUE RESEARCH -->
 
-    <p>
-        Legal research begins by converting facts into a precise legal
-        question. A clear legal issue helps you identify the correct
-        statute, section, rule and judicial authorities.
-    </p>
+        <div class="card">
 
-    <h4>How to identify a legal issue:</h4>
+            <h3>
+                🔎 Legal Issue Research
+            </h3>
 
-    <ul>
-        <li>Read and separate the important facts</li>
-        <li>Identify the legal relationship between the parties</li>
-        <li>Determine the rights and obligations involved</li>
-        <li>Identify the relevant area of law</li>
-        <li>Frame a specific legal question</li>
-        <li>Find the applicable statutory provision</li>
-        <li>Search relevant judicial decisions</li>
-        <li>Compare the facts with decided cases</li>
-    </ul>
-
-    <h4>Example:</h4>
-
-    <p>
-        Instead of researching a broad question such as
-        <strong>"What is property law?"</strong>, frame a specific issue such as:
-    </p>
-
-    <p>
-        <strong>
-            "Whether a particular transfer of property is legally valid
-            under the applicable law?"
-        </strong>
-    </p>
-
-    <p>
-        The researcher can then identify the relevant statute, provisions,
-        applicable rules and judicial decisions.
-    </p>
-
-</div>
-
-<div class="card">
-
-    <h3>📝 Academic Legal Research</h3>
-
-    <p>
-        Academic legal research is used for law-school assignments,
-        research papers, seminars, projects, dissertations, articles
-        and other academic work.
-    </p>
-
-    <h4>Basic Research Structure:</h4>
-
-    <ul>
-        <li>Title of the research</li>
-        <li>Introduction</li>
-        <li>Research problem</li>
-        <li>Research questions</li>
-        <li>Objectives of the research</li>
-        <li>Research methodology</li>
-        <li>Literature review</li>
-        <li>Primary legal sources</li>
-        <li>Secondary legal sources</li>
-        <li>Analysis and discussion</li>
-        <li>Findings</li>
-        <li>Conclusion</li>
-        <li>Bibliography / References</li>
-    </ul>
-
-    <h4>Useful Research Sources:</h4>
-
-    <ul>
-        <li>Constitution of India</li>
-        <li>Acts and statutes</li>
-        <li>Rules and regulations</li>
-        <li>Judgments and orders</li>
-        <li>Government notifications</li>
-        <li>Law journals</li>
-        <li>Books and commentaries</li>
-        <li>Research papers</li>
-    </ul>
-
-    <h4>Research Question Example:</h4>
-
-    <p>
-        A research paper should normally begin with a clearly defined
-        research question rather than a very broad topic.
-    </p>
-
-    <p>
-        <strong>
-            Example: "How have Indian courts interpreted the right to
-            privacy under the Constitution of India?"
-        </strong>
-    </p>
-
-</div>
-<!-- LEGAL RESEARCH SOURCES -->
-
-<h2 class="section-title">🔗 Legal Research Sources</h2>
-
-<p class="section-intro">
-    Use primary and authoritative sources wherever possible. Always verify
-    important legal information from the latest available source.
-</p>
-
-<div class="research-grid">
-
-    <div class="card">
-
-        <h3>🇮🇳 India Code</h3>
-
-        <p>
-            Official Government of India digital repository for Indian
-            legislation. The revamped portal provides improved search,
-            navigation and access to legislative materials.
-        </p>
-
-        <a class="btn"
-           href="https://indiacode.gov.in/"
-           target="_blank"
-           rel="noopener noreferrer">
-            Open India Code
-        </a>
-
-    </div>
+            <p>
+                Learn how to convert facts into a precise legal question
+                and identify the law and authorities required to answer it.
+            </p>
 
 
-    <div class="card">
+            <h4>
+                How to identify a legal issue:
+            </h4>
 
-        <h3>⚖️ Supreme Court of India</h3>
+            <ul>
 
-        <p>
-            Official source for Supreme Court information, judgments,
-            case status and other judicial resources.
-        </p>
+                <li>
+                    Read and identify the material facts
+                </li>
 
-        <a class="btn"
-           href="https://www.sci.gov.in/"
-           target="_blank"
-           rel="noopener noreferrer">
-            Open Supreme Court
-        </a>
+                <li>
+                    Identify the parties and their legal relationship
+                </li>
 
-    </div>
+                <li>
+                    Determine the rights and obligations involved
+                </li>
+
+                <li>
+                    Identify the relevant area of law
+                </li>
+
+                <li>
+                    Frame a specific legal question
+                </li>
+
+                <li>
+                    Find the applicable statutory provision
+                </li>
+
+                <li>
+                    Search relevant judicial decisions
+                </li>
+
+                <li>
+                    Compare the facts with relevant authorities
+                </li>
+
+            </ul>
 
 
-    <div class="card">
+            <h4>
+                Example:
+            </h4>
 
-        <h3>📜 Legislative Department</h3>
+            <p>
 
-        <p>
-            Government of India source for constitutional and legislative
-            materials, including Central Acts.
-        </p>
+                Instead of asking:
 
-        <a class="btn"
-           href="https://www.legislative.gov.in/"
-           target="_blank"
-           rel="noopener noreferrer">
-            Open Legislative Department
-        </a>
+                <strong>
+                    "What is property law?"
+                </strong>
 
-    </div>
+                frame a specific legal issue such as:
+
+            </p>
+
+            <p>
+
+                <strong>
+                    "Whether a particular transfer of property is
+                    legally valid under the applicable law?"
+                </strong>
+
+            </p>
+
+            <p>
+
+                The researcher can then identify the applicable statute,
+                provisions, rules and judicial decisions.
+
+            </p>
+
+        </div>
 
 
-    <div class="card">
 
-        <h3>📚 Central Acts</h3>
+        <!-- ACADEMIC -->
 
-        <p>
-            Access the Legislative Department's official list of Central Acts
-            for statutory research.
-        </p>
+        <div class="card">
 
-        <a class="btn"
-           href="https://www.legislative.gov.in/document-category/list-of-central-acts/"
-           target="_blank"
-           rel="noopener noreferrer">
-            View Central Acts
-        </a>
+            <h3>
+                📝 Academic Legal Research
+            </h3>
+
+            <p>
+                Useful for law-school assignments, projects, seminars,
+                research papers, dissertations and legal articles.
+            </p>
+
+
+            <h4>
+                Basic Research Structure
+            </h4>
+
+            <ul>
+
+                <li>
+                    Title
+                </li>
+
+                <li>
+                    Introduction
+                </li>
+
+                <li>
+                    Research problem
+                </li>
+
+                <li>
+                    Research questions
+                </li>
+
+                <li>
+                    Research objectives
+                </li>
+
+                <li>
+                    Research methodology
+                </li>
+
+                <li>
+                    Literature review
+                </li>
+
+                <li>
+                    Primary legal sources
+                </li>
+
+                <li>
+                    Secondary legal sources
+                </li>
+
+                <li>
+                    Analysis and discussion
+                </li>
+
+                <li>
+                    Findings
+                </li>
+
+                <li>
+                    Conclusion
+                </li>
+
+                <li>
+                    Bibliography / References
+                </li>
+
+            </ul>
+
+
+            <h4>
+                Example Research Question
+            </h4>
+
+            <p>
+
+                <strong>
+                    "How have Indian courts interpreted the right to
+                    privacy under the Constitution of India?"
+                </strong>
+
+            </p>
+
+        </div>
 
     </div>
 
-</div>
-    <!-- HOW TO RESEARCH -->
 
-    <h2 class="section-title">How to Conduct Legal Research</h2>
+
+    <!-- HOW TO CONDUCT RESEARCH -->
+
+    <h2 class="section-title">
+        How to Conduct Legal Research
+    </h2>
 
     <p class="section-intro">
-        A practical research workflow for law students.
+        Follow a structured research process instead of relying on
+        random search results.
     </p>
 
 
     <div class="steps">
 
+
         <div class="step">
 
-            <div class="step-number">1</div>
+            <div class="step-number">
+                1
+            </div>
 
             <div>
-                <h3>Identify the Legal Problem</h3>
+
+                <h3>
+                    Identify the Legal Problem
+                </h3>
 
                 <p>
-                    Start with the facts and identify the precise legal
+                    Understand the facts and identify the precise legal
                     question that needs to be answered.
                 </p>
+
             </div>
 
         </div>
+
 
 
         <div class="step">
 
-            <div class="step-number">2</div>
+            <div class="step-number">
+                2
+            </div>
 
             <div>
-                <h3>Find the Applicable Law</h3>
+
+                <h3>
+                    Frame the Legal Issue
+                </h3>
 
                 <p>
-                    Identify the relevant Constitution provision, Act,
-                    section, rule, regulation or notification.
+                    Convert the facts into a specific legal question
+                    capable of being answered through legal authorities.
                 </p>
+
             </div>
 
         </div>
+
 
 
         <div class="step">
 
-            <div class="step-number">3</div>
+            <div class="step-number">
+                3
+            </div>
 
             <div>
-                <h3>Check the Current Version</h3>
+
+                <h3>
+                    Find the Applicable Law
+                </h3>
 
                 <p>
-                    Check whether the legislation has been amended,
-                    repealed, substituted or otherwise modified.
+                    Identify the Constitution provision, Act, section,
+                    rule, regulation or notification relevant to the issue.
                 </p>
+
             </div>
 
         </div>
+
 
 
         <div class="step">
 
-            <div class="step-number">4</div>
+            <div class="step-number">
+                4
+            </div>
 
             <div>
-                <h3>Find Relevant Judgments</h3>
+
+                <h3>
+                    Check the Current Law
+                </h3>
 
                 <p>
-                    Search judgments dealing with the legal provision,
-                    issue or factual situation.
+                    Check whether the relevant legislation has been
+                    amended, substituted, repealed or otherwise changed.
                 </p>
+
             </div>
 
         </div>
+
 
 
         <div class="step">
 
-            <div class="step-number">5</div>
+            <div class="step-number">
+                5
+            </div>
 
             <div>
-                <h3>Read the Judgment Carefully</h3>
+
+                <h3>
+                    Search Judicial Decisions
+                </h3>
 
                 <p>
-                    Identify the facts, issues, arguments, applicable law,
-                    reasoning and final decision.
+                    Search for judgments dealing with the relevant
+                    statutory provision, constitutional issue or legal question.
                 </p>
+
             </div>
 
         </div>
+
 
 
         <div class="step">
 
-            <div class="step-number">6</div>
+            <div class="step-number">
+                6
+            </div>
 
             <div>
-                <h3>Verify the Authority</h3>
+
+                <h3>
+                    Read the Judgment
+                </h3>
 
                 <p>
-                    Whenever possible, verify the legislation and judgment
-                    against an official or authoritative source.
+                    Read the actual judgment and identify the facts,
+                    issues, arguments, reasoning and final decision.
                 </p>
+
             </div>
 
         </div>
+
 
 
         <div class="step">
 
-            <div class="step-number">7</div>
+            <div class="step-number">
+                7
+            </div>
 
             <div>
-                <h3>Prepare Your Legal Analysis</h3>
+
+                <h3>
+                    Verify the Authority
+                </h3>
 
                 <p>
-                    Connect the applicable law and judicial reasoning with
-                    the facts and legal issue under examination.
+                    Verify important legislation and judgments through
+                    official or authoritative sources before relying on them.
                 </p>
+
             </div>
 
         </div>
+
+
+
+        <div class="step">
+
+            <div class="step-number">
+                8
+            </div>
+
+            <div>
+
+                <h3>
+                    Prepare the Legal Analysis
+                </h3>
+
+                <p>
+                    Apply the identified legal principles to the facts
+                    and explain the reasoning supported by the authorities.
+                </p>
+
+            </div>
+
+        </div>
+
 
     </div>
+
 
 
     <!-- OFFICIAL SOURCES -->
 
     <div class="source-box">
 
-        <h2>Official Legal Research Sources</h2>
+        <h2>
+            🔗 Official Legal Research Sources
+        </h2>
+
 
         <ul>
 
+
             <li>
-                <strong>India Code</strong> —
-                Central and State legislation, sections and other legal
-                materials provided through the Government of India's
-                legislative information system.
+
+                <strong>
+                    India Code — Government of India
+                </strong>
+
                 <br>
-                <a href="https://www.indiacode.nic.in/indiacode/home.jsp"
-                   target="_blank">
+
+                Use the new India Code portal for statutory and
+                legislative research.
+
+                <br>
+
+                <a href="https://indiacode.gov.in/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     Open India Code
+
                 </a>
+
             </li>
 
 
+
             <li>
-                <strong>Supreme Court of India</strong> —
-                Official information including judgments, case status and
-                judicial resources.
+
+                <strong>
+                    Supreme Court of India
+                </strong>
+
                 <br>
+
+                Official source for Supreme Court judgments,
+                orders, case information and judicial resources.
+
+                <br>
+
                 <a href="https://www.sci.gov.in/"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     Open Supreme Court of India
+
                 </a>
+
             </li>
 
 
+
             <li>
-                <strong>Supreme Court Judgments & Orders Search</strong> —
-                Search judicial decisions using available search fields.
+
+                <strong>
+                    Supreme Court Judgments & Orders Search
+                </strong>
+
                 <br>
+
+                Search Supreme Court judgments and orders using
+                keywords and other available search options.
+
+                <br>
+
                 <a href="https://verdictfinder.sci.gov.in/elk_frontend/index.php"
-                   target="_blank">
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     Search Judgments & Orders
+
                 </a>
+
             </li>
 
 
-            <li>
-                <strong>Supreme Court Reports Search</strong> —
-                Search judgments and orders using keywords, Acts,
-                citations and other available fields.
-                <br>
-                <a href="https://scr.sci.gov.in/scrsearch/"
-                   target="_blank">
-                    Open SCR Search
-                </a>
-            </li>
-
 
             <li>
-                <strong>Legislative Department</strong> —
-                Government of India source for constitutional and legislative
-                materials.
+
+                <strong>
+                    Legislative Department — Government of India
+                </strong>
+
                 <br>
-                <a href="https://legislative.gov.in/"
-                   target="_blank">
+
+                Official Government source for constitutional and
+                legislative materials.
+
+                <br>
+
+                <a href="https://www.legislative.gov.in/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
                     Open Legislative Department
+
                 </a>
+
             </li>
+
+
+
+            <li>
+
+                <strong>
+                    List of Central Acts
+                </strong>
+
+                <br>
+
+                The Legislative Department publishes alphabetical and
+                chronological lists of Central Acts.
+
+                <br>
+
+                <a href="https://www.legislative.gov.in/document-category/list-of-central-acts/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    View Central Acts
+
+                </a>
+
+            </li>
+
 
         </ul>
 
     </div>
 
 
-    <!-- RESEARCH CHECKLIST -->
 
-    <h2 class="section-title">Legal Research Checklist</h2>
+    <!-- PRIMARY AND SECONDARY -->
+
+    <h2 class="section-title">
+        Primary & Secondary Legal Sources
+    </h2>
 
     <p class="section-intro">
-        Before completing a research assignment or legal note, check the
-        following points.
+        Understanding the difference between primary and secondary
+        sources is an important part of legal research.
+    </p>
+
+
+    <div class="research-grid">
+
+
+        <div class="card">
+
+            <h3>
+                ⚖️ Primary Legal Sources
+            </h3>
+
+            <p>
+                Primary sources are official legal authorities that
+                establish or record the law.
+            </p>
+
+            <ul>
+
+                <li>
+                    Constitution
+                </li>
+
+                <li>
+                    Acts / Statutes
+                </li>
+
+                <li>
+                    Rules and Regulations
+                </li>
+
+                <li>
+                    Notifications
+                </li>
+
+                <li>
+                    Government Orders
+                </li>
+
+                <li>
+                    Judicial Judgments and Orders
+                </li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="card">
+
+            <h3>
+                📚 Secondary Legal Sources
+            </h3>
+
+            <p>
+                Secondary sources explain, analyse or discuss primary
+                legal authorities.
+            </p>
+
+            <ul>
+
+                <li>
+                    Textbooks
+                </li>
+
+                <li>
+                    Legal Commentaries
+                </li>
+
+                <li>
+                    Law Journals
+                </li>
+
+                <li>
+                    Research Papers
+                </li>
+
+                <li>
+                    Legal Articles
+                </li>
+
+                <li>
+                    Academic Publications
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- RESEARCH CHECKLIST -->
+
+    <h2 class="section-title">
+        ✅ Legal Research Checklist
+    </h2>
+
+    <p class="section-intro">
+        Before completing a research assignment, legal note or research
+        paper, check the following.
     </p>
 
 
@@ -842,7 +1306,7 @@
             </li>
 
             <li>
-                Have I identified the relevant legislation?
+                Have I identified the applicable legislation?
             </li>
 
             <li>
@@ -854,7 +1318,7 @@
             </li>
 
             <li>
-                Have I searched for relevant judgments?
+                Have I searched for relevant judicial decisions?
             </li>
 
             <li>
@@ -867,16 +1331,16 @@
             </li>
 
             <li>
-                Have I used reliable primary sources wherever possible?
+                Have I used primary sources wherever possible?
             </li>
 
             <li>
-                Have I distinguished the facts of the case from the legal
+                Have I separated the facts of the case from the legal
                 principle decided by the court?
             </li>
 
             <li>
-                Have I properly recorded the sources used in my research?
+                Have I properly recorded all sources used in the research?
             </li>
 
         </ul>
@@ -884,75 +1348,139 @@
     </div>
 
 
-    <!-- PRIMARY VS SECONDARY -->
 
-    <h2 class="section-title">Primary & Secondary Legal Sources</h2>
+    <!-- RESEARCH TIPS -->
+
+    <h2 class="section-title">
+        💡 Legal Research Tips for Law Students
+    </h2>
+
 
     <div class="research-grid">
 
+
         <div class="card">
 
-            <h3>Primary Sources</h3>
+            <h3>
+                Start With the Law
+            </h3>
 
             <p>
-                Primary legal authorities are the materials that establish
-                or officially record the law.
+                First identify the applicable legal provision before
+                depending heavily on summaries or general internet articles.
             </p>
-
-            <ul>
-                <li>Constitution</li>
-                <li>Acts / Statutes</li>
-                <li>Rules and Regulations</li>
-                <li>Notifications</li>
-                <li>Judgments and Orders</li>
-            </ul>
 
         </div>
 
 
         <div class="card">
 
-            <h3>Secondary Sources</h3>
+            <h3>
+                Read the Original Judgment
+            </h3>
 
             <p>
-                Secondary materials help explain, analyse or discuss the law.
+                A case summary may be useful for orientation, but important
+                research should be verified against the actual judgment.
             </p>
 
-            <ul>
-                <li>Textbooks</li>
-                <li>Commentaries</li>
-                <li>Law journals</li>
-                <li>Research papers</li>
-                <li>Legal articles</li>
-            </ul>
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Verify Citations
+            </h3>
+
+            <p>
+                Check the case title, court, date, case number and available
+                citation before using a case as legal authority.
+            </p>
 
         </div>
+
+
+        <div class="card">
+
+            <h3>
+                Check Amendments
+            </h3>
+
+            <p>
+                Do not automatically rely on an old version of legislation.
+                Check the latest available official material.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Compare Authorities
+            </h3>
+
+            <p>
+                Where relevant, examine multiple judicial decisions and
+                distinguish cases based on their facts and legal issues.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>
+                Keep Research Notes
+            </h3>
+
+            <p>
+                Record important sections, cases, quotations, reasoning
+                and source details while conducting research.
+            </p>
+
+        </div>
+
 
     </div>
+
 
 
     <!-- IMPORTANT NOTICE -->
 
     <div class="notice">
 
-        <strong>Research Note:</strong>
+        <strong>
+            LegalKant Research Notice:
+        </strong>
 
-        LegalKant is an educational legal-learning platform. Laws,
-        amendments, notifications and judicial decisions can change over
-        time. Always verify important legal information against the latest
-        official or authoritative source before relying upon it for legal
-        advice, litigation, filing or professional work.
+        LegalKant is an educational platform for legal learning and
+        research. Laws, amendments, notifications and judicial decisions
+        may change over time.
+
+        Important legal information should be verified from the latest
+        official or authoritative source before being relied upon for
+        legal advice, litigation, filing or professional work.
 
     </div>
+
 
 </div>
 
 
+
+<!-- FOOTER -->
+
 <footer>
 
-    <p>LegalKant</p>
+    <p>
+        LegalKant
+    </p>
 
-    <p>Legal Knowledge. Simplified.</p>
+    <p>
+        Legal Knowledge. Simplified.
+    </p>
 
     <p>
         LegalKant is created by Rama Kant, a law student, with the aim of
@@ -972,6 +1500,7 @@
     </p>
 
 </footer>
+
 
 </body>
 </html>
