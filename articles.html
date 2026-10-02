@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Legal Articles | LegalKant</title>
+
+<style>
+
+:root{
+--navy:#071525;
+--navy2:#0d2038;
+--gold:#d4af37;
+--gold2:#f0d77a;
+--bg:#f5f7fa;
+--border:#e3e7ed;
+}
+
+*{box-sizing:border-box}
+
+body{
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:var(--bg);
+color:#17202a;
+line-height:1.65;
+}
+
+header{
+background:linear-gradient(135deg,var(--navy),var(--navy2));
+padding:18px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:10;
+}
+
+.logo{
+color:var(--gold);
+font-size:28px;
+font-weight:800;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:18px;
+font-size:13px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:var(--gold2);
+}
+
+.hero{
+background:linear-gradient(135deg,var(--navy),var(--navy2));
+color:white;
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin:0 0 10px;
+}
+
+.hero h1 span{
+color:var(--gold);
+}
+
+.hero p{
+max-width:800px;
+margin:auto;
+color:#dce5ef;
+}
+
+.container{
+max-width:1150px;
+margin:auto;
+padding:45px 20px 70px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:22px;
+}
+
+.card{
+background:white;
+border:1px solid var(--border);
+border-radius:14px;
+padding:24px;
+box-shadow:0 6px 20px rgba(0,0,0,.06);
+}
+
+.card h2{
+color:var(--navy);
+margin-top:0;
+}
+
+.card p{
+font-size:14px;
+color:#4b5563;
+}
+
+.tag{
+display:inline-block;
+color:var(--gold);
+font-size:12px;
+font-weight:bold;
+margin-bottom:8px;
+}
+
+.btn{
+display:inline-block;
+background:var(--navy);
+color:white;
+padding:9px 13px;
+border-radius:7px;
+text-decoration:none;
+font-size:12px;
+font-weight:bold;
+margin-top:8px;
+}
+
+.notice{
+margin-top:30px;
+background:#fffdf5;
+border:1px solid #eadb9b;
+border-left:5px solid var(--gold);
+padding:20px;
+border-radius:9px;
+}
+
+footer{
+background:var(--navy);
+color:white;
+text-align:center;
+padding:42px 20px 25px;
+}
+
+.footer-logo{
+color:var(--gold);
+font-size:27px;
+font-weight:800;
+}
+
+.creator{
+max-width:760px;
+margin:12px auto;
+color:#d7e0ea;
+font-size:14px;
+}
+
+.contact{
+margin:18px 0;
+}
+
+.contact a{
+color:var(--gold2);
+font-weight:bold;
+}
+
+.copy{
+border-top:1px solid rgba(255,255,255,.15);
+margin-top:20px;
+padding-top:18px;
+color:#aeb9c6;
+font-size:12px;
+}
+
+@media(max-width:850px){
+
+header{
+flex-direction:column;
+gap:12px;
+}
+
+nav{
+text-align:center;
+}
+
+nav a{
+display:inline-block;
+margin:5px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">LegalKant</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="bare-acts.html">Bare Acts</a>
+<a href="case-laws.html">Case Laws</a>
+<a href="legal-research.html">Research</a>
+<a href="legal-drafting.html">Drafting</a>
+<a href="study-resources.html">Study</a>
+<a href="articles.html">Articles</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Legal <span>Articles</span></h1>
+
+<p>
+Simple, practical and research-oriented articles on Indian law
+for students and legal learners.
+</p>
+
+</section>
+
+<main class="container">
+
+<div class="grid">
+
+<article class="card">
+<div class="tag">CONSTITUTIONAL LAW</div>
+<h2>How to Read a Supreme Court Judgment</h2>
+<p>
+Understand facts, issues, arguments, findings, ratio decidendi,
+obiter dicta and final directions.
+</p>
+<a class="btn" href="case-laws.html">Explore Case Laws</a>
+</article>
+
+<article class="card">
+<div class="tag">LEGAL RESEARCH</div>
+<h2>How to Start Legal Research</h2>
+<p>
+Learn how to convert a legal problem into a research question,
+statutory provisions, authorities and a structured research note.
+</p>
+<a class="btn" href="legal-research.html">Research Guide</a>
+</article>
+
+<article class="card">
+<div class="tag">CONTRACT LAW</div>
+<h2>Contract vs Agreement</h2>
+<p>
+Understand the legal relationship between agreements and contracts
+and the importance of enforceability.
+</p>
+<a class="btn" href="bare-acts.html">Contract Act</a>
+</article>
+
+<article class="card">
+<div class="tag">CONTRACT LAW</div>
+<h2>Void and Voidable Agreements</h2>
+<p>
+Study the distinction between void and voidable arrangements
+using the applicable statutory framework.
+</p>
+<a class="btn" href="legal-research.html">Research</a>
+</article>
+
+<article class="card">
+<div class="tag">CRIMINAL LAW</div>
+<h2>BNS, BNSS and BSA</h2>
+<p>
+An introductory guide to the three 2023 criminal-law enactments
+and their respective subject areas.
+</p>
+<a class="btn" href="bare-acts.html">View Bare Acts</a>
+</article>
+
+<article class="card">
+<div class="tag">LEGAL DRAFTING</div>
+<h2>How to Draft a Legal Notice</h2>
+<p>
+Understand facts, legal basis, demand, response period,
+documents and proof of service.
+</p>
+<a class="btn" href="legal-drafting.html">Drafting Guide</a>
+</article>
+
+<article class="card">
+<div class="tag">CASE LAW</div>
+<h2>How to Prepare a Case Brief</h2>
+<p>
+Use a repeatable structure covering citation, facts, issues,
+arguments, decision, ratio and significance.
+</p>
+<a class="btn" href="case-laws.html">Case Laws</a>
+</article>
+
+<article class="card">
+<div class="tag">CONSUMER LAW</div>
+<h2>Consumer Complaint: Research Checklist</h2>
+<p>
+Identify transaction documents, consumer status, alleged
+defect or deficiency, jurisdiction and reliefs.
+</p>
+<a class="btn" href="bare-acts.html">Consumer Law</a>
+</article>
+
+<article class="card">
+<div class="tag">LEGAL TECHNOLOGY</div>
+<h2>Why Legal Citation Verification Matters</h2>
+<p>
+Learn why every case citation should be checked against an
+authoritative judgment before being used in legal work.
+</p>
+<a class="btn" href="legal-research.html">Research</a>
+</article>
+
+<article class="card">
+<div class="tag">LEGAL EDUCATION</div>
+<h2>How to Study a Bare Act</h2>
+<p>
+A practical method for reading sections, definitions,
+exceptions, explanations and amendments.
+</p>
+<a class="btn" href="bare-acts.html">Bare Acts</a>
+</article>
+
+</div>
+
+<div class="notice">
+
+<h3>LegalKant Editorial Note</h3>
+
+<p>
+LegalKant articles are intended for legal learning and research.
+Statutory provisions and case-law propositions should be checked
+against current authoritative sources before being relied upon
+in legal work.
+</p>
+
+</div>
+
+</main>
+
+<footer>
+
+<div class="footer-logo">LegalKant</div>
+
+<p>Legal Knowledge. Simplified.</p>
+
+<div class="creator">
+LegalKant is created by Rama Kant, a law student, with the aim of making
+legal learning, research, and educational resources more accessible and practical.
+</div>
+
+<div class="contact">
+📧 Contact:
+<a href="mailto:ramakant.legal@gmail.com">
+ramakant.legal@gmail.com
+</a>
+</div>
+
+<div class="copy">
+© 2026 LegalKant. All Rights Reserved.
+</div>
+
+</footer>
+
+</body>
+</html>
